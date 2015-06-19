@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Validator底层使用</title>
+    <script type="text/javascript" src="js/util.method.js"></script>
+    <script type="text/javascript">
+        browser.loaded(function () {
+            Validator.clearMessage();
+            var result = Validator.startVerify(3,'13402117778').verify(3, "手机号码格式错误。").endVerify();
+
+            console.log(result);
+
+            var res = Validator.startVerify(0, 'span').verify(3, '手机号码格式错误').endVerify();
+
+            console.log(res);
+        });
+
+        browser.loaded(function(){
+            alert(1);
+        });
+
+        browser.loaded(function(){
+            alert(2);
+        });
+
+    </script>
+</head>
+<body>
+<span id="span">13402117778</span>
+</body>
+</html>
