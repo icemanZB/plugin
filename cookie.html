@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>cookie插件使用</title>
+    <script type="text/javascript" src="js/jquery-2.0.2.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            // 1.新添加一个会话 cookie
+            // 注: 当没有指明 cookie 有效时间时,所创建的 cookie 有效期默认到用户关闭浏览器为止
+            // 所以被称为会话 cookie（session cookie）
+            $.cookie('the_cookie', 'the_value');
+
+            // 2.创建一个 cookie 并设置有效时间为 7天
+            // 注: 当指明了cookie 有效时间时,所创建的 cookie 被称为持久 cookie (persistent  cookie)
+            $.cookie('the_cookie', 'the_value', {expires: 7});
+
+            // 3.创建一个 cookie 并设置 cookie 的有效路径
+            /*
+             *  注: 在默认情况下,只有设置 cookie 的网页才能读取该 cookie
+             *  如果想让一个页面读取另一个页面设置的 cookie 必须设置 cookie 的路径
+             *  cookie的路径用于设置能够读取 cookie 的顶级目录
+             *  将这个路径设置为网站的根目录,可以让所有网页都能互相读取 cookie (一般不要这样设置防止出现冲突)
+             *
+             * */
+            $.cookie('the_cookie', 'the_value', {expires: 7, path: '/'});
+
+            // 4.读取 cookie
+
+            $.cookie('the_cookie'); // cookie 存在 => 'the_value'
+
+            $.cookie('not_existing'); // cookie 不存在 => null
+
+            // 5.删除 cookie 通过传递 null 作为 cookie 的值即可
+
+            $.cookie('the_cookie', null);
+
+            /*
+             ----------相关参数的解释---------------
+
+             1).expires: 365
+
+             定义 cookie 的有效时间,值可以是一个数字(从创建 cookie 时算起以天为单位)或一个 Date 对象
+
+             如果省略,那么创建的 cookie 是会话 cookie 将在用户退出浏览器时被删除
+
+             2).path: '/'
+
+             默认情况: 只有设置 cookie 的网页才能读取该cookie
+
+             定义cookie的有效路径, 默认情况下, 该参数的值为创建 cookie 的网页所在路径(标准浏览器的行为)
+
+             如果你想在整个网站中访问这个cookie需要这样设置有效路径：path: '/'
+
+             如果你想删除一个定义了有效路径的 cookie 你需要在调用函数时包含这个路径
+
+             $.cookie('the_cookie', null,{ path: '/' });
+
+             domain: 'example.com' 默认值：创建 cookie的网页所拥有的域名。
+
+             3).secure：true
+
+             默认值：false　如果为 true cookie 的传输需要使用安全协议(HTTPS)
+
+             4).raw: true
+
+             默认值：false
+
+             默认情况下,读取和写入 cookie 的时候自动进行编码和解码(使用encodeURIComponent 编码
+
+             decodeURIComponent 解码)  要关闭这个功能设置 raw: true 即可
+
+             */
+
+            /*
+            *  1.4.0 版本
+            *
+             Read cookie
+             ```javascript
+             $.cookie('the_cookie'); // => "the_value"
+             $.cookie('not_existing'); // => undefined
+
+             Read all available cookies:
+
+             ```javascript
+             $.cookie(); // => { "the_cookie": "the_value", "...remaining": "cookies" }
+
+             Delete cookie:
+
+             ```javascript
+             // Returns true when cookie was found, false when no cookie was found...
+             $.removeCookie('the_cookie');
+
+             // Same path as when the cookie was written...
+             $.removeCookie('the_cookie', { path: '/' });
+            *
+            * */
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>
