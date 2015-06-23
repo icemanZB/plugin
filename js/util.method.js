@@ -378,7 +378,7 @@ var string = (function () {
         return eval('(' + str + ')');
     };
     s.indexString = function (str, length) {
-        var len = str.replace(/[^\x00-\xff]/g, "**").length; // 中英文统计(一个中文算两个字符)
+        var len = str.replace(/[^\x00-\xff]/g, "**").length; // 中英文统计(一个中文算两个字符)  \x00-\xff 16进制
         if (len <= length) {
             return str;
         }
