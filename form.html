@@ -3,14 +3,167 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>form插件使用</title>
+    <script type="text/javascript" src="js/jquery-2.0.2.js"></script>
+    <script type="text/javascript" src="js/jquery.form.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // bind 'myForm' and provide a simple callback function
+
+            /*
+             *
+             * ajaxForm
+             * 预处理将要使用AJAX方式提交的表单,将所有需要用到的事件监听器添加到其中
+             * 它不是提交这个表单,在页面的ready函数里使用ajaxForm来给你页面上的表单做这些AJAX提交的准备工作
+             * ajaxForm 需要零个或一个参数,这唯一的一个参数可以是一个回调函数或者是一个可选参数对象
+             * 是否可以连环调用:是
+             *
+             * $('#myFormId').ajaxForm();
+             *
+             * */
+
+            $('#myForm').ajaxForm(function () {
+                // 当表单提交后 name 和 comment 的值就会被提交给comment.php
+                // 如果服务器端返回成功的状态,用户将会看到一句提示信息 "Thank you"
+                alert("Thank you for your comment!");
+            });
+
+
+            var options = {
+                target: '#divToUpdate',
+                url: 'comment.php',
+                success: function () {
+                    alert('Thanks for your comment!');
+                }
+            };
+
+            // 注意，这个参数对象也可以当作 jQuery的 $.ajax方法的参数
+            // 如果对 $.ajax 方法的参数使用很熟悉,也可以把它当作 ajaxForm 和 ajaxSubmit 的参数使用
+            $('#myForm').ajaxForm(options);
+
+
+            // attach handler to form's submit event
+            // 立即通过AJAX方式提交表单 最常见的用法是对用户提交表单的动作进行响应时调用它
+            $('#myForm').submit(function () {
+                $(this).ajaxSubmit();
+                // return false 这样可以阻止正常的浏览器表单提交和页面转向
+                return false;
+            });
+
+
+            // formSerialize
+            // 将表单序列化成查询串  这个方法将返回一个形如:  name1=value1&name2=value2的字符串
+            // 是否可以连环调用: 否  这个方法返回的是一个字符串
+
+            var queryString = $('#myForm').formSerialize();
+            $.post('comment.php', queryString);
+
+
+            // fieldValue
+            // 取出所有匹配要求的域的值 以数组形式返回
+            // 如果没有符合条件的域 这个数组将会是个空数组,否则它将会包含至少一个值
+            // 是否可以连环调用: 否 这个方法返回的是一个数组
+
+            // get the value of the password input
+            var value = $('#myForm :password').fieldValue();
+            console.log('The password is: ' + value[0]);
+
+
+            // resetForm
+            // 通过调用表单元素的内在的 DOM 上的方法把表单重置成最初的状态
+            // 是否可以连环调用: 是
+            $('#myForm').resetForm();
+
+
+            // clearForm
+            // 清空表单所有元素的值 这个方法将会清空所有的文本框,密码框,文本域里的值,去掉下拉列表所有被选中的项
+            // 让所有复选框和单选框里被选中的项不再选中
+            // 是否可以连环调用:否
+            $('#myForm .specialFields').clearFields();
+
+
+            /*
+             *
+             * 可选参数项对象
+             *
+             * ajaxForm 和 ajaxSubmit 都支持大量的可选参数,它们通过可选参数项对象传入
+             * 可选参数项对象只是一个简单的 JavaScript 对象,里边包含了一些属性和一些值:
+             *
+             *
+             * target
+             * 用server端返回的内容更换指定的页面元素的内容 这个值可以用 jQuery 选择器来表示或者是一个jQuery 对象, 一个 DOM 元素
+             * 缺省值： null
+             *
+             *
+             * url
+             * 表单提交的地址
+             * 缺省值: 表单的action的值
+             *
+             *
+             * type
+             * 表单提交的方式，'GET' 或 'POST'.
+             * 缺省值: 表单的 method 的值 (如果没有指明则认为是 'GET')
+             *
+             *
+             * beforeSubmit
+             * 表单提交前执行的方法 这个可以用在表单提交前的预处理,或表单校验
+             * beforeSubmit 指定的函数返回 false 则表单不会被提交
+             * beforeSubmit 函数调用时需要3个参数:数组形式的表单数据, jQuery 对象形式的表单对象
+             * 可选的用来传递给ajaxForm/ajaxSubmit 的对象 数组形式的表单数据是下面这样的格式:
+             * [ { name: 'username', value: 'jresig' }, { name: 'password', value: 'secret' } ]
+             * 缺省值: null
+             *
+             * success
+             * 当表单提交后执行的函数 如果 success 回调函数被指定 当server端返回对表单提交的响应后,这个方法就会被执行
+             * responseText 和 responseXML 的值会被传进这个参数 (这个要依赖于dataType的类型)
+             * 缺省值: null
+             *
+             *
+             * dataType
+             * 指定服务器响应返回的数据类型 其中之一: null, 'xml', 'script', 或者 'json'
+             * 这个 dataType 选项用来指示你如何去处理server端返回的数据  这个和 jQuery.httpData 方法直接相对应
+             * 下面就是可以用的选项:
+             * 'xml' : 如果 dataType == 'xml' 则 server 端返回的数据被当作是 XML 来处理
+             * 这种情况下 success 指定的回调函数会被传进去 responseXML 数据
+             * 'json': 如果 dataType == 'json' 则 server 端返回的数据将会被执行,并传进 success 回调函数
+             * 'script': 如果 dataType == 'script' 则server端返回的数据将会在上下文的环境中被执行
+             * 缺省值： null
+             *
+             *
+             * semantic
+             * 一个布尔值,用来指示表单里提交的数据的顺序是否需要严格按照语义的顺序
+             * 一般表单的数据都是按语义顺序序列化的,除非表单里有一个type="image"元素
+             * 所以只有当表单里必须要求有严格顺序并且表单里有type="image"时才需要指定这个
+             * 缺省值: false
+             *
+             *
+             * resetForm
+             * 布尔值,指示表单提交成功后是否需要重置
+             * 缺省值: null
+             *
+             * clearForm
+             * 布尔值,指示表单提交成功后是否需要清空
+             * 缺省值: null
+             *
+             *
+             * iframe
+             * 布尔值,用来指示表单是否需要提交到一个iframe里
+             * 这个用在表单里有file域要上传文件时
+             * 缺省值: false
+             *
+             * 参考 : http://www.vaikan.com/docs/jquery.form.plugin/jquery.form.plugin.html#options-object
+             * */
+
+        });
+    </script>
 </head>
 <body>
-<!--
-http://malsup.com/jquery/form/
-http://www.vaikan.com/docs/jquery.form.plugin/jquery.form.plugin.html
-https://github.com/malsup/form
-http://blog.csdn.net/memray/article/details/8483024
-http://xinkong1010.iteye.com/blog/866045
--->
+
+<form id="myForm" action="comment.php" method="post">
+    Name: <input type="text" name="name" id="name"/>
+    Comment: <textarea name="comment" id="comment"></textarea>
+    <input type="submit" value="Submit Comment"/>
+</form>
+
+
 </body>
 </html>
