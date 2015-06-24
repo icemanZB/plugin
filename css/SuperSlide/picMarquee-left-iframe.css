@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background: #fff;
+    font: normal 12px/22px ËÎÌו;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.picMarquee-left {
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.picMarquee-left .hd {
+    overflow: hidden;
+    height: 30px;
+    background: #f4f4f4;
+    padding: 0 10px;
+}
+
+.picMarquee-left .hd .prev, .picMarquee-left .hd .next {
+    display: block;
+    width: 5px;
+    height: 9px;
+    float: right;
+    margin-right: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    background: url(../../img/SuperSlide/arrow.png) no-repeat;
+}
+
+.picMarquee-left .hd .next {
+    background-position: 0 -50px;
+}
+
+.picMarquee-left .bd {
+    padding: 10px;
+}
+
+.picMarquee-left .bd ul {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.picMarquee-left .bd ul li {
+    margin: 0 8px;
+    float: left;
+    _display: inline;
+    overflow: hidden;
+    text-align: center;
+}
+
+.picMarquee-left .bd ul li .pic {
+    text-align: center;
+}
+
+.picMarquee-left .bd ul li .pic img {
+    width: 120px;
+    height: 90px;
+    display: block;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.picMarquee-left .bd ul li .pic a:hover img {
+    border-color: #999;
+}
+
+.picMarquee-left .bd ul li .title {
+    line-height: 24px;
+}

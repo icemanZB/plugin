@@ -100,7 +100,6 @@
     </div>
     <!-- 1 switchTab E -->
 
-
     <!-- 2 focusNews S -->
     <div id="focusNews" class="demoBox ">
         <div id="effect2" class="hd"><h3><span>2. </span>焦点图 / 幻灯片</h3></div>
@@ -301,14 +300,12 @@
     </div>
     <!-- 3 picScroll-left E -->
 
-
-<!--
-    &lt;!&ndash; 4 picScroll-top S &ndash;&gt;
+    <!-- 4 picScroll-top S -->
     <div id="picScroll-top" class="demoBox ">
-        <div name="effect4" id="effect4" class="hd"><h3><span>4. </span>图片滚动-上</h3></div>
+        <div id="effect4" class="hd"><h3><span>4. </span>图片滚动-上</h3></div>
         <div class="bd">
             <div class="iframeWrap">
-                <iframe allowTransparency="true" scrolling="no" _src="demo/iframe/4.0-picScroll-top-iframe.html?&top&true&1&3" frameborder="0"></iframe>
+                <iframe allowTransparency="true" scrolling="no" src="iframe/picScroll-top-iframe.html?&top&true&1&3" frameborder="0"></iframe>
                 <p class="botTit"><em>4.0-图片滚动-上</em></p>
             </div>
 
@@ -374,7 +371,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="n" title="前/后按钮是否继续循环，若为false则当翻动到最前/后页时，前/后按钮点击无效">前后按钮循环<i>[pnLoop]</i>:</td>
+                        <td class="n" title="前/后按钮是否继续循环，若为false则当翻动到最前/后页时，前/后按钮点击无效">
+                            前后按钮循环<i>[pnLoop]</i>:
+                        </td>
                         <td>
                             <select name="pnLoop">
                                 <option value="true">true</option>
@@ -399,22 +398,21 @@
                         </td>
                     </tr>
                 </table>
-                <p class="jsCode">当前调用代码：<span class="curJsCode">jQuery(".picScroll-top").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true<i></i>});</span></p>
                 <p class="notice">注意1：不同缓动效果设置适当“效果速度”，会有最佳效果。<br/>
                     注意2：现在是全按钮开启情况，不需要按钮的时候，只要删除按钮html或者隐藏即可。
                 </p>
             </div>
 
-        </div>&lt;!&ndash; bd E &ndash;&gt;
+        </div>
     </div>
-    &lt;!&ndash; 4 picScroll-top E &ndash;&gt;
+    <!-- 4 picScroll-top E -->
 
-    &lt;!&ndash; 5 picMarquee-left S &ndash;&gt;
+    <!-- 5 picMarquee-left S -->
     <div id="picMarquee-left" class="demoBox ">
-        <div name="effect5" id="effect5" class="hd"><h3><span>5. </span>图片无缝滚动-左</h3></div>
+        <div id="effect5" class="hd"><h3><span>5. </span>图片无缝滚动-左</h3></div>
         <div class="bd">
             <div class="iframeWrap">
-                <iframe allowTransparency="true" scrolling="no" _src="demo/iframe/5.0-picMarquee-left-iframe.html?&leftMarquee&3&50&false&true&click" frameborder="0"></iframe>
+                <iframe allowTransparency="true" scrolling="no" src="iframe/picMarquee-left-iframe.html?&leftMarquee&3&50&false&true&click" frameborder="0"></iframe>
                 <p class="botTit"><em>5.0-图片无缝滚动-左</em></p>
             </div>
 
@@ -455,7 +453,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="n" title="前/后按钮是否继续循环，若为false则当翻动到最前/后页时，前/后按钮点击无效">前后按钮循环<i>[pnLoop]</i>:</td>
+                        <td class="n" title="前/后按钮是否继续循环，若为false则当翻动到最前/后页时，前/后按钮点击无效">
+                            前后按钮循环<i>[pnLoop]</i>:
+                        </td>
                         <td>
                             <select name="pnLoop">
                                 <option value="true">true</option>
@@ -480,19 +480,19 @@
                         </td>
                     </tr>
                 </table>
-                <p class="jsCode">当前调用代码：<span class="curJsCode">jQuery(".picMarquee-left").slide({mainCell:".bd ul",autoPlay:true<i></i>});</span></p>
+
             </div>
 
-        </div>&lt;!&ndash; bd E &ndash;&gt;
+        </div>
     </div>
-    &lt;!&ndash; 5 picMarquee-left E &ndash;&gt;
+    <!-- 5 picMarquee-left E -->
 
-    &lt;!&ndash; 6 picMarquee-top S &ndash;&gt;
+    <!-- 6 picMarquee-top S -->
     <div id="picMarquee-top" class="demoBox ">
-        <div name="effect6" id="effect6" class="hd"><h3><span>6. </span>图片无缝滚动-上</h3></div>
+        <div id="effect6" class="hd"><h3><span>6. </span>图片无缝滚动-上</h3></div>
         <div class="bd">
             <div class="iframeWrap">
-                <iframe allowTransparency="true" scrolling="no" _src="demo/iframe/6.0-picMarquee-top-iframe.html?&topMarquee&3&50&false&true&click" frameborder="0"></iframe>
+                <iframe allowTransparency="true" scrolling="no" src="iframe/picMarquee-top-iframe.html?&topMarquee&3&50&false&true&click" frameborder="0"></iframe>
                 <p class="botTit"><em>6.0-图片无缝滚动-上</em></p>
             </div>
 
@@ -533,7 +533,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="n" title="前/后按钮是否继续循环，若为false则当翻动到最前/后页时，前/后按钮点击无效">前后按钮循环<i>[pnLoop]</i>:</td>
+                        <td class="n" title="前/后按钮是否继续循环，若为false则当翻动到最前/后页时，前/后按钮点击无效">
+                            前后按钮循环<i>[pnLoop]</i>:
+                        </td>
                         <td>
                             <select name="pnLoop">
                                 <option value="true">true</option>
@@ -557,118 +559,15 @@
                             </select>
                         </td>
                     </tr>
-
                 </table>
-                <p class="jsCode">当前调用代码：<span class="curJsCode">jQuery(".picMarquee-top").slide({mainCell:".bd ul",autoPlay:true<i></i>});</span></p>
+
             </div>
 
-        </div>&lt;!&ndash; bd E &ndash;&gt;
+        </div>
     </div>
-    &lt;!&ndash; 6 picMarquee-top E &ndash;&gt;
+    <!-- 6 picMarquee-top E -->
 
-    &lt;!&ndash; 7 txtScroll-left S &ndash;&gt;
-    <div id="txtScroll-left" class="demoBox ">
-        <div name="effect7" id="effect7" class="hd"><h3><span>7. </span>文字滚动-左</h3></div>
-        <div class="bd">
-            <div class="iframeWrap">
-                <iframe allowTransparency="true" scrolling="no" _src="demo/iframe/7.0-txtScroll-left-iframe.html?&left&true&2&2" frameborder="0"></iframe>
-                <p class="botTit"><em>7.0-文字滚动-左</em></p>
-            </div>
-
-            <div class="params">
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                    <tr class="tit"> <td colspan="4">常用参数(切换看看)</td> </tr>
-                    <tr>
-                        <td class="n">效果<i>[effect]</i>:</td>
-                        <td>
-                            <select rel="string" name="effect">
-                                <option value="left" class="show">left</option>
-                                <option value="leftLoop">leftLoop</option>
-                            </select>
-                        </td>
-                        <td class="n">自动运行<i>[autoPlay]</i>:</td>
-                        <td>
-                            <select name="autoPlay">
-                                <option value="false">false</option>
-                                <option selected="selected" value="true">true</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="n">滚动个数<i>[scroll]</i>:</td>
-                        <td>
-                            <select name="scroll">
-                                <option value="1">1</option>
-                                <option value="2" selected="selected">2</option>
-                            </select>
-                        </td>
-                        <td class="n">可视个数<i>[vis]</i>:</td>
-                        <td>
-                            <select name="vis">
-                                <option value="1">1</option>
-                                <option value="2" selected="selected">2</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="n">缓动效果<i>[easing]</i>:</td>
-                        <td>
-                            <select rel="string" name="easing">
-
-                                <option value="swing">swing</option>
-                                <option value="easeOutCirc">easeOutCirc</option>
-                                <option value="easeInQuint">easeInQuint</option>
-                                <option value="easeInBack">easeInBack</option>
-                                <option value="easeOutBounce">easeOutBounce</option>
-                                <option value="easeOutElastic">easeOutElastic</option>
-                                <option value="easing-more">更多</option>
-                            </select>
-                        </td>
-                        <td class="n">效果速度<i>[delayTime]</i>:</td>
-                        <td>
-                            <select name="delayTime">
-                                <option value="500">500</option>
-                                <option value="700">700</option>
-                                <option value="1000">1000</option>
-                                <option value="0">0</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="n" title="前/后按钮是否继续循环，若为false则当翻动到最前/后页时，前/后按钮点击无效">前后按钮循环<i>[pnLoop]</i>:</td>
-                        <td>
-                            <select name="pnLoop">
-                                <option value="true">true</option>
-                                <option value="false">false</option>
-                            </select>
-                        </td>
-                        <td class="n">触发方式<i>[trigger]</i>:</td>
-                        <td>
-                            <select rel="string" name="trigger">
-                                <option value="mouseover">mouseover</option>
-                                <option value="click">click</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="n new" title="v2.1 新增：鼠标移到容器层是否停止播放">停止播放<i>[mouseOverStop]</i>:</td>
-                        <td>
-                            <select name="mouseOverStop">
-                                <option value="true">true</option>
-                                <option value="false">false</option>
-                            </select>
-                        </td>
-                    </tr>
-                </table>
-                <p class="jsCode">当前调用代码：<span class="curJsCode">jQuery(".txtScroll-left").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true<i></i>});</span></p>
-                <p class="notice">注意1：不同缓动效果设置适当“效果速度”，会有最佳效果。<br/>
-                    注意2：现在是全按钮开启情况，不需要按钮的时候，只要删除按钮html或者隐藏即可。
-                </p>
-            </div>
-
-        </div>&lt;!&ndash; bd E &ndash;&gt;
-    </div>
-    &lt;!&ndash; 7 txtScroll-left E &ndash;&gt;
+<!--
 
     &lt;!&ndash; 8 txtScroll-top S &ndash;&gt;
     <div id="txtScroll-top" class="demoBox ">

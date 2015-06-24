@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background: #fff;
+    font: normal 12px/22px ËÎÌו;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.picMarquee-top {
+    margin: 0 auto;
+    width: 210px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.picMarquee-top .hd {
+    overflow: hidden;
+    height: 30px;
+    background: #f4f4f4;
+    padding: 0 10px;
+}
+
+.picMarquee-top .hd .prev, .picMarquee-top .hd .next {
+    display: block;
+    width: 9px;
+    height: 5px;
+    float: right;
+    margin-right: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    background: url(../../img/SuperSlide/arrow.png) 0 -100px no-repeat;
+}
+
+.picMarquee-top .hd .next {
+    background-position: 0 -140px;
+}
+
+.picMarquee-top .bd {
+    padding: 10px;
+}
+
+.picMarquee-top .bd ul {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.picMarquee-top .bd ul li {
+    text-align: center;
+    zoom: 1;
+}
+
+.picMarquee-top .bd ul li .pic {
+    text-align: center;
+}
+
+.picMarquee-top .bd ul li .pic img {
+    width: 180px;
+    height: 90px;
+    display: block;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.picMarquee-top .bd ul li .pic a:hover img {
+    border-color: #999;
+}
+
+.picMarquee-top .bd ul li .title {
+    line-height: 24px;
+}

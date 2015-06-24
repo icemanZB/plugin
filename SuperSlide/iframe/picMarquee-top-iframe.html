@@ -2,19 +2,16 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>SuperSlide - 图片滚动特效-左</title>
-    <link rel="stylesheet" href="../../css/SuperSlide/picScroll-left-iframe.css"/>
+    <title>SuperSlide - 图片无缝滚动特效-上</title>
+    <link rel="stylesheet" href="../../css/SuperSlide/picMarquee-top-iframe.css"/>
     <script type="text/javascript" src="../../js/jquery-2.0.2.js"></script>
     <script type="text/javascript" src="../../js/jquery.SuperSlide.2.1.1.js"></script>
 </head>
 <body>
-
-<div class="picScroll-left">
+<div class="picMarquee-top">
     <div class="hd">
         <a class="next"></a>
-        <ul></ul>
         <a class="prev"></a>
-        <span class="pageState"></span>
     </div>
     <div class="bd">
         <ul class="picList">
@@ -53,14 +50,16 @@
             <li>
                 <div class="pic">
                     <a href="http://www.SuperSlide2.com" target="_blank">
-                        <img src="../../img/SuperSlide/pic5.jpg"/></a>
+                        <img src="../../img/SuperSlide/pic5.jpg"/>
+                    </a>
                 </div>
                 <div class="title"><a href="http://www.SuperSlide2.com" target="_blank">效果图5</a></div>
             </li>
             <li>
                 <div class="pic">
                     <a href="http://www.SuperSlide2.com" target="_blank">
-                        <img src="../../img/SuperSlide/pic6.jpg"/></a>
+                        <img src="../../img/SuperSlide/pic6.jpg"/>
+                    </a>
                 </div>
                 <div class="title"><a href="http://www.SuperSlide2.com" target="_blank">效果图6</a></div>
             </li>
@@ -70,21 +69,17 @@
 
 <script type="text/javascript">
     var ary = location.href.split("&");
-    jQuery(".picScroll-left").slide({
-        titCell: ".hd ul",
+    jQuery(".picMarquee-top").slide({
         mainCell: ".bd ul",
-        autoPage: true,
+        autoPlay: true,
         effect: ary[1],
-        autoPlay: ary[2],
-        scroll: ary[3],
-        vis: ary[4],
-        easing: ary[5],
-        delayTime: ary[6],
-        pnLoop: ary[7],
-        trigger: ary[8],
-        mouseOverStop: ary[9]
+        vis: ary[2],
+        interTime: ary[3],
+        opp: ary[4],
+        pnLoop: ary[5],
+        trigger: ary[6],
+        mouseOverStop: ary[7]
     });
 </script>
-
 </body>
 </html>
