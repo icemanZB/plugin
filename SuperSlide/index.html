@@ -7,11 +7,10 @@
     <script type="text/javascript" src="../js/jquery-2.0.2.js"></script>
 </head>
 <body>
-<div id="content" name="content">
-
+<div id="content">
     <!-- 1 switchTab S -->
     <div id="switchTab" class="demoBox">
-        <div name="effect1" id="effect1" class="hd"><h3><span>1. </span>标签切换 / 书签切换 / 默认效果</h3></div>
+        <div id="effect1" class="hd"><h3><span>1. </span>标签切换 / 书签切换 / 默认效果</h3></div>
         <div class="bd">
             <div class="iframeWrap">
                 <iframe allowTransparency="true" scrolling="no" src="iframe/switchTab.html?" frameborder="0"></iframe>
@@ -72,7 +71,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="n">效果速度<i>[delayTime]</i>:</td>
+                        <td class="n">
+                            效果速度<i>[delayTime]</i>:
+                        </td>
                         <td>
                             <select name="delayTime">
                                 <option value="500">500</option>
@@ -95,22 +96,25 @@
                 <p class="notice">注意：缓动效果对于fade影响不大;不同缓动效果设置适当“效果速度”，会有最佳效果。<br/></p>
             </div>
 
-        </div><!-- bd E -->
+        </div>
     </div>
     <!-- 1 switchTab E -->
 
-<!--    &lt;!&ndash; 2 focusNews S &ndash;&gt;
+
+    <!-- 2 focusNews S -->
     <div id="focusNews" class="demoBox ">
-        <div name="effect2" id="effect2" class="hd"><h3><span>2. </span>焦点图 / 幻灯片</h3></div>
+        <div id="effect2" class="hd"><h3><span>2. </span>焦点图 / 幻灯片</h3></div>
         <div class="bd">
             <div class="iframeWrap">
-                <iframe allowTransparency="true" scrolling="no" _src="demo/iframe/2.0-focus-iframe.html?&fade&true" frameborder="0"></iframe>
+                <iframe allowTransparency="true" scrolling="no" src="iframe/focus-iframe.html?&fade&true" frameborder="0"></iframe>
                 <p class="botTit"><em>2.0-焦点图/幻灯片</em></p>
             </div>
 
             <div class="params">
                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                    <tr class="tit"> <td colspan="4">常用参数(切换看看)</td> </tr>
+                    <tr class="tit">
+                        <td colspan="4">常用参数(切换看看)</td>
+                    </tr>
                     <tr>
                         <td class="n">效果<i>[effect]</i>:</td>
                         <td>
@@ -172,7 +176,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="n" title="前/后按钮是否继续循环，若为false则当翻动到最前/后页时，前/后按钮点击无效">前后按钮循环<i>[pnLoop]</i>:</td>
+                        <td class="n" title="前/后按钮是否继续循环，若为false则当翻动到最前/后页时，前/后按钮点击无效">
+                            前后按钮循环<i>[pnLoop]</i>:
+                        </td>
                         <td>
                             <select name="pnLoop">
                                 <option value="true">true</option>
@@ -181,26 +187,26 @@
                         </td>
                     </tr>
                 </table>
-                <p class="jsCode">当前调用代码：<span class="curJsCode">jQuery(".slideBox").slide({mainCell:".bd ul"<i></i>});</span></p>
                 <p class="notice">注意：缓动效果对于fade影响不大;不同缓动效果设置适当“效果速度”，会有最佳效果。<br/></p>
             </div>
-
-        </div>&lt;!&ndash; bd E &ndash;&gt;
+        </div>
     </div>
-    &lt;!&ndash; 2 focusNews E &ndash;&gt;
+    <!-- 2 focusNews E -->
 
-    &lt;!&ndash; 3 picScroll-left S &ndash;&gt;
+    <!-- 3 picScroll-left S -->
     <div id="picScroll-left" class="demoBox ">
-        <div name="effect3" id="effect3" class="hd"><h3><span>3. </span>图片滚动-左</h3></div>
+        <div id="effect3" class="hd"><h3><span>3. </span>图片滚动-左</h3></div>
         <div class="bd">
             <div class="iframeWrap">
-                <iframe allowTransparency="true" scrolling="no" _src="demo/iframe/3.0-picScroll-left-iframe.html?&left&true&1&3" frameborder="0"></iframe>
+                <iframe allowTransparency="true" scrolling="no" src="iframe/picScroll-left-iframe.html?&left&true&1&3" frameborder="0"></iframe>
                 <p class="botTit"><em>3.0-图片滚动-左</em></p>
             </div>
 
             <div class="params">
                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                    <tr class="tit"> <td colspan="4">常用参数(切换看看)</td> </tr>
+                    <tr class="tit">
+                        <td colspan="4">常用参数(切换看看)</td>
+                    </tr>
                     <tr>
                         <td class="n">效果<i>[effect]</i>:</td>
                         <td>
@@ -239,7 +245,6 @@
                         <td class="n">缓动效果<i>[easing]</i>:</td>
                         <td>
                             <select rel="string" name="easing">
-
                                 <option value="swing">swing</option>
                                 <option value="easeOutCirc">easeOutCirc</option>
                                 <option value="easeInQuint">easeInQuint</option>
@@ -260,7 +265,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="n" title="前/后按钮是否继续循环，若为false则当翻动到最前/后页时，前/后按钮点击无效">前后按钮循环<i>[pnLoop]</i>:</td>
+                        <td class="n" title="前/后按钮是否继续循环，若为false则当翻动到最前/后页时，前/后按钮点击无效">
+                            前后按钮循环<i>[pnLoop]</i>:
+                        </td>
                         <td>
                             <select name="pnLoop">
                                 <option value="true">true</option>
@@ -285,16 +292,17 @@
                         </td>
                     </tr>
                 </table>
-                <p class="jsCode">当前调用代码：<span class="curJsCode">jQuery(".picScroll-left").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true<i></i>});</span></p>
                 <p class="notice">注意1：不同缓动效果设置适当“效果速度”，会有最佳效果。<br/>
                     注意2：现在是全按钮开启情况，不需要按钮的时候，只要删除按钮html或者隐藏即可。
                 </p>
             </div>
 
-        </div>&lt;!&ndash; bd E &ndash;&gt;
+        </div>
     </div>
-    &lt;!&ndash; 3 picScroll-left E &ndash;&gt;
+    <!-- 3 picScroll-left E -->
 
+
+<!--
     &lt;!&ndash; 4 picScroll-top S &ndash;&gt;
     <div id="picScroll-top" class="demoBox ">
         <div name="effect4" id="effect4" class="hd"><h3><span>4. </span>图片滚动-上</h3></div>
