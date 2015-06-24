@@ -1,0 +1,400 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+form, fieldset, input, textarea, p, blockquote, th, td, img {
+    padding: 0;
+    margin: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var, i {
+    font-weight: normal;
+    font-style: normal;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+/*-- All --*/
+html {
+    min-width: 1000px;
+}
+
+body {
+    color: #333;
+    font: 12px/20px Arial, "Microsoft YaHei", "宋体", sans-serif;
+    text-align: center;
+    background: #fff;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    color: #f00;
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+}
+
+table td, table th {
+    border: #ddd solid 1px;
+    padding: 5px 0;
+}
+
+table th {
+    background: #39A4DC;
+    color: #fff;
+}
+
+table .new td {
+    color: #f60;
+    font-weight: bold;
+}
+
+#content {
+    margin: 0 auto;
+    padding: 0 30px 30px 30px;
+    position: relative;
+    text-align: left;
+    z-index: 0;
+}
+
+.demoBox {
+    padding: 0 20px 60px 20px;
+    background: #f2f2f2;
+    border-bottom: 3px dotted #ccc;
+}
+
+.demoBox .hd {
+    padding: 40px 10px 0 10px;
+}
+
+.demoBox .hd h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #39A4DC;
+    line-height: 60px;
+}
+
+.demoBox .hd h3 span {
+    color: #ccc;
+    font-style: italic;
+    font-size: 60px;
+}
+
+.demoBox .bd {
+    padding: 20px;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.demoBox .bd .iframeWrap {
+    overflow: hidden;
+    float: left;
+}
+
+.demoBox iframe {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.demoBox .botTit {
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    background: #eee;
+    text-align: right;
+    padding: 5px 0;
+    display: none;
+}
+
+.demoBox .botTit em {
+    float: left;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.params {
+    width: 580px;
+    height: 100%;
+    margin-left: 20px;
+    float: left;
+    _display: inline;
+    background: #fff;
+    padding-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+.params table {
+    background: #fff;
+}
+
+.params table .tit td {
+    padding: 5px 10px;
+    background: #39A4DC;
+    color: #fff;
+}
+
+.params table td {
+    border: 1px solid #fff;
+    line-height: 24px;
+    text-indent: 5px;
+}
+
+.params table .n {
+    width: 153px;
+
+}
+
+.params table .new {
+    color: #f00;
+}
+
+.params table i {
+    color: #999;
+}
+
+.params p {
+    padding: 10px 0 0 10px;
+}
+
+.params .curJsCode {
+    color: #f60;
+    display: block;
+}
+
+.demoBox .iframeWrap {
+    width: 452px;
+}
+
+.demoBox .iframeWrap iframe {
+    width: 452px;
+    height: 232px;
+    background: url(../../img/SuperSlide/loading.gif) center center no-repeat;
+}
+
+#picScroll-left iframe {
+    height: 174px;
+}
+
+#picScroll-top iframe {
+    height: 415px;
+}
+
+#picMarquee-left iframe {
+    height: 172px;
+}
+
+#picMarquee-top iframe {
+    height: 415px;
+}
+
+#txtScroll-left iframe {
+    height: 80px;
+}
+
+#txtScroll-top iframe {
+    height: 182px;
+}
+
+#txtMarquee-left iframe {
+    height: 107px;
+}
+
+#txtMarquee-top iframe {
+    height: 184px;
+}
+
+#sideMenu iframe {
+    height: 227px;
+}
+
+/* 隐藏代码盒子 */
+#displayBox {
+    z-index: 10;
+    display: none;
+    position: fixed;
+    _position: absolute;
+    width: 1000px;
+    height: 500px;
+    left: 50%;
+    top: 60px;
+    margin-left: -500px;
+    background: #fff;
+    border: 5px solid #eee;
+    -webkit-box-shadow: #333 0 0 8px;
+    -moz-box-shadow: #333 0 0 8px;
+    box-shadow: #333 0 0 8px;
+}
+
+#displayBox .hd {
+    height: 30px;
+    line-height: 30px;
+    background: #eee;
+    padding: 0 10px;
+    position: relative;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#F7F7F7), to(#eee));
+    background: -webkit-linear-gradient(#F7F7F7, #eee);
+    background: -moz-linear-gradient(#F7F7F7, #eee);
+    background: -ms-linear-gradient(#F7F7F7, #eee);
+    background: -o-linear-gradient(#F7F7F7, #eee);
+    background: linear-gradient(#F7F7F7, #eee);
+}
+
+#displayBox .hd h3 {
+    font-weight: bold;
+    color: #39A4DC;
+}
+
+#displayBox .hd a {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    width: 20px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    background: #f60;
+    color: #fff;
+    cursor: pointer;
+}
+
+#displayBox .hd a:hover {
+    text-decoration: none;
+}
+
+#displayBox .bd {
+    padding: 10px 0;
+    background: #fff;
+}
+
+#displayBox textarea {
+    width: 458px;
+    height: 230px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+#displayBox .bd p {
+    padding-top: 10px;
+}
+
+#displayBox iframe {
+    width: 1000px;
+    height: 440px;
+    margin: 0 auto;
+}
+
+.demoList {
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.demoList li {
+    position: relative;
+    cursor: pointer;
+    float: left;
+    width: 160px;
+    text-align: center;
+    margin: 0 30px 30px 0;
+    padding: 4px 4px 0 4px;
+    background: #e3e3e3;
+    color: #000;
+}
+
+.demoList li img {
+    display: block;
+    width: 160px;
+    height: 120px;
+    background: url(../../img/SuperSlide/loading.gif) center center no-repeat;
+}
+
+.demoList li h3 {
+    height: 28px;
+    line-height: 28px;
+}
+
+.demoList li.new i {
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    z-index: 1;
+    width: 31px;
+    height: 31px;
+}
+
+.demoList li.on {
+    background: #666;
+    color: #fff;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+}
+
+.demoBoxEven {
+    background: #fff;
+}
+
+.demoBoxEven .demoList li {
+}
+
+.demoBoxEven .demoList li.on {
+    background: #666;
+    color: #fff;
+}
+
+
+/*
+.demoBox .botTit span a {
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+    background: #f60;
+    margin-right: 10px;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: none;
+}
+
+.demoBox .botTit span a:hover {
+    text-decoration: none;
+    background: #f60;
+}*/
