@@ -1,0 +1,53 @@
+/* css 重置 */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background: #fff;
+    font: normal 12px/22px 宋体;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sideMenu {
+    border: 1px solid #ddd;
+}
+
+.sideMenu h3 {
+    height: 32px;
+    line-height: 32px;
+    padding-left: 10px;
+    border-top: 1px solid #e3e3e3;
+    background: #f4f4f4;
+    cursor: pointer;
+    font: normal 14px/32px "Microsoft YaHei";
+}
+
+.sideMenu h3 em {
+    float: right;
+    display: block;
+    width: 40px;
+    height: 32px;
+    background: url(../../img/SuperSlide/icoAdd.png) 16px 12px no-repeat;
+    cursor: pointer;
+}
+
+.sideMenu h3.on em {
+    background-position: 16px -57px;
+}
+
+.sideMenu ul {
+    padding: 8px 25px;
+    color: #999;
+    display: none; /* 默认都隐藏 */
+}
