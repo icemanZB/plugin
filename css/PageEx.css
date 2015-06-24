@@ -1,0 +1,66 @@
+﻿/*分页控件的样式*/
+.data_page_nav {
+    padding: 10px 10px 20px 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+    margin: 20px 0 40px 0;
+}
+
+.pagination a {
+    text-decoration: none;
+    border: solid 1px #e7eaec;
+    padding: 5px 10px;
+    margin: 0 5px;
+    color: #333;
+    background: #DBDBDB;
+}
+
+.pagination a, .pagination span {
+    display: block;
+    float: left;
+    padding: 3px 5px;
+    margin: 0 5px 5px 0;
+    min-width: 1em;
+    text-align: center;
+    /*padding: 5px 10px;*/
+    /*margin: 0px 5px;*/
+    color: #4ea0d6;
+    background: #FFFFFF;
+    border: solid 1px #e7eaec;
+}
+
+.pagination input {
+    display: block;
+    float: left;
+    padding: 3px 5px;
+    margin: 0 5px 5px 0;
+    min-width: 1em;
+    text-align: center;
+    /*margin: 0px 8px;*/
+    /*margin-bottom: 5px;*/
+    color: #333;
+}
+
+.pagination .current {
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #4ea0d6;
+    background: #e7eaec;
+}
+
+.pagination .prev, .pagination .next {
+    padding: 5px 10px;
+    color: #FFFFFF;
+    background: #4ea0d6;
+}
+
+.data_page_nav .pagination {
+    display: inline;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+#checkPageNum, .pagination a:last-child {
+    display: none;
+}

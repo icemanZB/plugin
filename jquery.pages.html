@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>分页控件使用</title>
+    <link rel="stylesheet" href="css/PageEx.css"/>
+    <script type="text/javascript" src="js/jquery-2.0.2.js"></script>
+    <script type="text/javascript" src="js/jquery.pagination.js"></script>
+    <script type="text/javascript" src="js/util.method.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var article = (function () {
+                var o = {};
+                // 原创分页
+                o.articleCondition = function (pageIndex) {
+                    Sender.handler = "http://service.finance365.com/api/Pages";
+                    Sender.val = {
+                        ApiName: "ArticleQueryByConditionExForPc",
+                        ClassifyNo: '',
+                        JobNo: 1,
+                        PageIndex: pageIndex + 1,
+                        PageSize: 18
+                    };
+                    Sender.callback = function (data) {
+                        if ($.isEmptyObject(data)) {
+                            return;
+                        }
+                        o.bindCondition(data);
+                        o.createPages(data.Total, pageIndex);
+                    };
+                    Sender.onSubmit();
+                };
+
+                // 绑定原创分页
+                o.bindCondition = function (data) {
+                    console.log(data);
+                };
+
+                // 初始化分页
+                o.createPages = function (total, pageIndex) {
+                    if (total >= 0) {
+                        $(".pagination").pagination(total, {
+                            prev_text: '<',
+                            next_text: '>',
+                            num_display_entries: 5,
+                            current_page: pageIndex,
+                            items_per_page: 18,
+                            num_edge_entries: 2,
+                            show_if_single_page: true,
+                            load_first_page: false,
+                            callback: o.articlePagesList
+                        });
+                    }
+                };
+
+                // 分页回调函数
+                o.articlePagesList = function (pageIndex) {
+                    o.articleCondition(pageIndex);
+                };
+
+                return o;
+
+            })();
+
+            article.articleCondition(0);
+        });
+
+        /*
+         * maxentries	总条目数	必选参数 整数
+         * items_per_page	每页显示的条目数	可选参数 默认是 10
+         * num_display_entries	连续分页主体部分显示的分页条目数	可选参数 默认是 10
+         * current_page	当前选中的页面	可选参数，默认是0，表示第1页
+         * num_edge_entries	两侧显示的首尾分页的条目数	可选参数 默认是0
+         * link_to	分页的链接	字符串 可选参数 默认是"#"
+         * prev_text	"上一页"分页按钮上显示的文字	字符串参数 可选  默认是"Prev"
+         * next_text	"下一页"分页按钮上显示的文字	字符串参数 可选  默认是"Next"
+         * ellipse_text	 省略的页数用什么文字表示	 可选字符串参数，默认是"..."
+         * prev_show_always	是否显示"前一页"分页按钮	布尔型 可选参数 默认为true 即显示"前一页"按钮
+         * next_show_always	是否显示"下一页"分页按钮	布尔型 可选参数 默认为true 即显示"下一页"按钮
+         * callback	回调函数	默认无执行效果
+         *
+         *
+         * */
+
+    </script>
+</head>
+<body>
+
+<div class="pagination"></div>
+
+</body>
+</html>
