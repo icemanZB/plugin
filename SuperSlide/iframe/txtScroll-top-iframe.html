@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../../css/SuperSlide/txtScroll-top-iframe.css"/>
+    <script type="text/javascript" src="../../js/jquery-2.0.2.js"></script>
+    <script type="text/javascript" src="../../js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+<body>
+<div class="txtScroll-top">
+    <div class="hd">
+        <a class="next"></a>
+        <ul></ul>
+        <a class="prev"></a>
+        <span class="pageState"></span>
+    </div>
+    <div class="bd">
+        <ul class="infoList">
+            <li>
+                <span class="date">2011-11-11</span>
+                <a href="http://www.SuperSlide2.com" target="_blank">中国打破了世界软件巨头规则</a>
+            </li>
+            <li>
+                <span class="date">2011-11-11</span>
+                <a href="http://www.SuperSlide2.com" target="_blank">口语：会说中文就能说英语！</a>
+            </li>
+            <li>
+                <span class="date">2011-11-11</span>
+                <a href="http://www.SuperSlide2.com" target="_blank">农场摘菜不如在线学外语好玩</a>
+            </li>
+            <li>
+                <span class="date">2011-11-11</span>
+                <a href="http://www.SuperSlide2.com" target="_blank">数理化老师竟也看学习资料？</a>
+            </li>
+            <li>
+                <span class="date">2011-11-11</span>
+                <a href="http://www.SuperSlide2.com" target="_blank">学英语送ipad2,45天突破听说</a>
+            </li>
+            <li>
+                <span class="date">2011-11-11</span>
+                <a href="http://www.SuperSlide2.com" target="_blank">学外语，上北外！</a>
+            </li>
+            <li>
+                <span class="date">2011-11-11</span>
+                <a href="http://www.SuperSlide2.com" target="_blank">那些无法理解的荒唐事</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var ary = location.href.split("&");
+    jQuery(".txtScroll-top").slide({
+        titCell: ".hd ul",
+        mainCell: ".bd ul",
+        autoPage: true,
+        effect: ary[1],
+        autoPlay: ary[2],
+        scroll: ary[3],
+        vis: ary[4],
+        easing: ary[5],
+        delayTime: ary[6],
+        pnLoop: ary[7],
+        trigger: ary[8],
+        mouseOverStop: ary[9]
+    });
+</script>
+</body>
+</html>

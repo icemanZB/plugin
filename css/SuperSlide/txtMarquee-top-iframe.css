@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background: #fff;
+    font: normal 12px/22px ËÎÌו;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #1974A1;
+}
+
+.txtMarquee-top {
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.txtMarquee-top .hd {
+    overflow: hidden;
+    height: 30px;
+    background: #f4f4f4;
+    padding: 0 10px;
+}
+
+.txtMarquee-top .hd .prev, .txtMarquee-top .hd .next {
+    display: block;
+    width: 9px;
+    height: 5px;
+    float: right;
+    margin-right: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    background: url(../../img/SuperSlide/arrow.png) 0 -100px no-repeat;
+}
+
+.txtMarquee-top .hd .next {
+    background-position: 0 -140px;
+}
+
+.txtMarquee-top .bd {
+    padding: 15px;
+}
+
+.txtMarquee-top .infoList li {
+    height: 24px;
+    line-height: 24px;
+}
+
+.txtMarquee-top .infoList li .date {
+    float: right;
+    color: #999;
+}

@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background: #fff;
+    font: normal 12px/22px ËÎÌו;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #1974A1;
+}
+
+.txtScroll-top {
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.txtScroll-top .hd {
+    overflow: hidden;
+    height: 30px;
+    background: #f4f4f4;
+    padding: 0 10px;
+}
+
+.txtScroll-top .hd .prev, .txtScroll-top .hd .next {
+    display: block;
+    width: 9px;
+    height: 5px;
+    float: right;
+    margin-right: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    background: url(../../img/SuperSlide/arrow.png) 0 -100px no-repeat;
+}
+
+.txtScroll-top .hd .next {
+    background-position: 0 -140px;
+}
+
+.txtScroll-top .hd ul {
+    float: right;
+    overflow: hidden;
+    zoom: 1;
+    margin-top: 10px;
+}
+
+.txtScroll-top .hd ul li {
+    float: left;
+    width: 9px;
+    height: 9px;
+    overflow: hidden;
+    margin-right: 5px;
+    text-indent: -999px;
+    cursor: pointer;
+    background: url(../../img/SuperSlide/icoCircle.gif) 0 -9px no-repeat;
+}
+
+.txtScroll-top .hd ul li.on {
+    background-position: 0 0;
+}
+
+.txtScroll-top .bd {
+    padding: 15px;
+}
+
+.txtScroll-top .infoList li {
+    height: 24px;
+    line-height: 24px;
+}
+
+.txtScroll-top .infoList li .date {
+    float: right;
+    color: #999;
+}
