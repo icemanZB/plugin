@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>treeviews的使用</title>
+    <link rel="stylesheet" href="css/jquery.treeview.css"/>
+    <link rel="stylesheet" href="css/screen.css"/>
+    <script type="text/javascript" src="js/jquery-2.0.2.js"></script>
+    <script type="text/javascript" src="js/jquery.treeview.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            // first example
+            $("#browser").treeview();
+
+            // second example
+            $("#navigation").treeview({
+                persist: "location",
+                collapsed: true,
+                unique: true
+            });
+
+            // third example
+            $("#red").treeview({
+                animated: "fast",
+                collapsed: true,
+                unique: true,
+                persist: "cookie",
+                toggle: function () {
+                    window.console && console.log("%o was toggled", this);
+                }
+            });
+
+        });
+    </script>
+</head>
+<body>
+<h1 id="banner"><a href="http://bassistance.de/jquery-plugins/jquery-plugin-treeview/">jQuery Treeview Plugin</a> Demo
+</h1>
+
+<div id="main">
+
+    <h4>Sample 1 - default</h4>
+    <ul id="browser" class="filetree">
+        <li><span class="folder">Folder 1</span>
+            <ul>
+                <li><span class="file">Item 1.1</span></li>
+            </ul>
+        </li>
+        <li><span class="folder">Folder 2</span>
+            <ul>
+                <li><span class="folder">Subfolder 2.1</span>
+                    <ul id="folder21">
+                        <li><span class="file">File 2.1.1</span></li>
+                        <li><span class="file">File 2.1.2</span></li>
+                    </ul>
+                </li>
+                <li><span class="file">File 2.2</span></li>
+            </ul>
+        </li>
+        <li class="closed"><span class="folder">Folder 3 (closed at start)</span>
+            <ul>
+                <li><span class="file">File 3.1</span></li>
+            </ul>
+        </li>
+        <li><span class="file">File 4</span></li>
+    </ul>
+
+    <h4>Sample 2 - Navigation</h4>
+
+    <ul id="navigation">
+        <li><a href="?1">Item 1</a>
+            <ul>
+                <li><a href="?1.0">Item 1.0</a>
+                    <ul>
+                        <li><a href="?1.0.0">Item 1.0.0</a></li>
+                    </ul>
+                </li>
+                <li><a href="?1.1">Item 1.1</a></li>
+                <li><a href="?1.2">Item 1.2</a>
+                    <ul>
+                        <li><a href="?1.2.0">Item 1.2.0</a>
+                            <ul>
+                                <li><a href="?1.2.0.0">Item 1.2.0.0</a></li>
+                                <li><a href="?1.2.0.1">Item 1.2.0.1</a></li>
+                                <li><a href="?1.2.0.2">Item 1.2.0.2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="?1.2.1">Item 1.2.1</a>
+                            <ul>
+                                <li><a href="?1.2.1.0">Item 1.2.1.0</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="?1.2.2">Item 1.2.2</a>
+                            <ul>
+                                <li><a href="?1.2.2.0">Item 1.2.2.0</a></li>
+                                <li><a href="?1.2.2.1">Item 1.2.2.1</a></li>
+                                <li><a href="?1.2.2.2">Item 1.2.2.2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="?2">Item 2</a>
+            <ul>
+                <li><span>Item 2.0</span>
+                    <ul>
+                        <li><a href="?2.0.0">Item 2.0.0</a>
+                            <ul>
+                                <li><a href="?2.0.0.0">Item 2.0.0.0</a></li>
+                                <li><a href="?2.0.0.1">Item 2.0.0.1</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="?2.1">Item 2.1</a>
+                    <ul>
+                        <li><a href="?2.1.0">Item 2.1.0</a>
+                            <ul>
+                                <li><a href="?2.1.0.0">Item 2.1.0.0</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="?2.1.1">Item 2.1.1</a>
+                            <ul>
+                                <li><a href="?2.1.1.0abc">Item 2.1.1.0</a></li>
+                                <li><a href="?2.1.1.1">Item 2.1.1.1</a></li>
+                                <li><a href="?2.1.1.2">Item 2.1.1.2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="?2.1.2">Item 2.1.2</a>
+                            <ul>
+                                <li><a href="?2.1.2.0">Item 2.1.2.0</a></li>
+                                <li><a href="?2.1.2.1">Item 2.1.2.1</a></li>
+                                <li><a href="?2.1.2.2">Item 2.1.2.2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="?3">Item 3</a>
+            <ul>
+                <li class="open"><a href="?3.0">Item 3.0</a>
+                    <ul>
+                        <li><a href="?3.0.0">Item 3.0.0</a></li>
+                        <li><a href="?3.0.1">Item 3.0.1</a>
+                            <ul>
+                                <li><a href="?3.0.1.0">Item 3.0.1.0</a></li>
+                                <li><a href="?3.0.1.1">Item 3.0.1.1</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="?3.0.2">Item 3.0.2</a>
+                            <ul>
+                                <li><a href="?3.0.2.0">Item 3.0.2.0</a></li>
+                                <li><a href="?3.0.2.1">Item 3.0.2.1</a></li>
+                                <li><a href="?3.0.2.2">Item 3.0.2.2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h4>Sample 3 - fast animations, all branches collapsed at first, red theme, cookie-based persistance</h4>
+    <ul id="red" class="treeview-red">
+        <li><span>Item 1</span>
+            <ul>
+                <li><span>Item 1.0</span>
+                    <ul>
+                        <li><span>Item 1.0.0</span></li>
+                    </ul>
+                </li>
+                <li><span>Item 1.1</span></li>
+                <li><span>Item 1.2</span>
+                    <ul>
+                        <li><span>Item 1.2.0</span>
+                            <ul>
+                                <li><span>Item 1.2.0.0</span></li>
+                                <li><span>Item 1.2.0.1</span></li>
+                                <li><span>Item 1.2.0.2</span></li>
+                            </ul>
+                        </li>
+                        <li><span>Item 1.2.1</span>
+                            <ul>
+                                <li><span>Item 1.2.1.0</span></li>
+                            </ul>
+                        </li>
+                        <li><span>Item 1.2.2</span>
+                            <ul>
+                                <li><span>Item 1.2.2.0</span></li>
+                                <li><span>Item 1.2.2.1</span></li>
+                                <li><span>Item 1.2.2.2</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span>Item 2</span>
+            <ul>
+                <li><span>Item 2.0</span>
+                    <ul>
+                        <li><span>Item 2.0.0</span>
+                            <ul>
+                                <li><span>Item 2.0.0.0</span></li>
+                                <li><span>Item 2.0.0.1</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><span>Item 2.1</span>
+                    <ul>
+                        <li><span>Item 2.1.0</span>
+                            <ul>
+                                <li><span>Item 2.1.0.0</span></li>
+                            </ul>
+                        </li>
+                        <li><span>Item 2.1.1</span>
+                            <ul>
+                                <li><span>Item 2.1.1.0</span></li>
+                                <li><span>Item 2.1.1.1</span></li>
+                                <li><span>Item 2.1.1.2</span></li>
+                            </ul>
+                        </li>
+                        <li><span>Item 2.1.2</span>
+                            <ul>
+                                <li><span>Item 2.1.2.0</span></li>
+                                <li><span>Item 2.1.2.1</span></li>
+                                <li><span>Item 2.1.2.2</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="open"><span>Item 3</span>
+            <ul>
+                <li class="open"><span>Item 3.0</span>
+                    <ul>
+                        <li><span>Item 3.0.0</span></li>
+                        <li><span>Item 3.0.1</span>
+                            <ul>
+                                <li><span>Item 3.0.1.0</span></li>
+                                <li><span>Item 3.0.1.1</span></li>
+                            </ul>
+
+                        </li>
+                        <li><span>Item 3.0.2</span>
+                            <ul>
+                                <li><span>Item 3.0.2.0</span></li>
+                                <li><span>Item 3.0.2.1</span></li>
+                                <li><span>Item 3.0.2.2</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+</div>
+</body>
+</html>
