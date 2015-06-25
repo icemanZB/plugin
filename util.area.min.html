@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>省市级联</title>
+    <script type="text/javascript" src="js/jquery-2.0.2.js"></script>
+    <script type="text/javascript" src="js/util.pca.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            // 插件的 util.pca.js 不能改, 会出现乱码
+            new PCAS("Province", "City");
+        });
+    </script>
+</head>
+<body>
+<select id="Province" name="Province" style="width: 150px">
+</select>
+<select id="City" name="City" style="width: 150px">
+</select>
+</body>
+</html>

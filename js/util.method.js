@@ -405,3 +405,15 @@ var browser = (function () {
     return b;
 })();
 
+/**
+ *
+ * openUrl.openNewWindow(url);
+ * */
+var openUrl = (function () {
+    var o = {};
+    o.openNewWindow = function (toUrl) {
+        window.open('about:blank');  // 继承空白页面
+        location.href = toUrl;
+    };
+    return o;
+})();
