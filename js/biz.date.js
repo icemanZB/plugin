@@ -1,5 +1,5 @@
 ﻿ (function ($) {
-     function isRN(y) {// 计算闺年
+     function isRN(y) {// 计算润年
          return y % 4 == 0 || (y % 100 == 0 && y % 400 == 0);
      }
      function getDays(y, m) {// 计算每月天数
@@ -48,7 +48,7 @@
              day = createSelect(1, 32, '日');
              box.append(day);
              //box.append("&nbsp;&nbsp;&nbsp;");
-             hidden = box.append('<input type="hidden" name="birthday" />');
+             hidden = box.append('<input type="hidden" id="birthday" name="birthday" />');
              $(year).change(upRN);
              $(mon).change(upRN);
              $(day).change(function () {

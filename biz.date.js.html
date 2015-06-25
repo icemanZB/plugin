@@ -7,12 +7,29 @@
     <script type="text/javascript" src="js/biz.date.js"></script>
     <script type="text/javascript">
         $(function(){
-            $('#birthday').birthdaySelect();
+            $('#bir').birthdaySelect();
+
+            $("#btn").click(function(){
+                var year = $("select").eq(0).val();
+                var mon = $("select").eq(1).val();
+                var day = $("select").eq(2).val();
+                var birth = [];
+                if (year > -1 && mon > -1 && day > -1) {
+                    if (mon < 9)
+                        mon = "0" + mon;
+                    if (day < 9)
+                        day = "0" + day;
+                    birth = [year, mon, day].join("-");
+                }
+
+                console.log(birth);
+            });
         });
     </script>
 </head>
 <body>
-<div id="birthday">
+<div id="bir">
 </div>
+<input type="button" id="btn" value="获取"/>
 </body>
 </html>
