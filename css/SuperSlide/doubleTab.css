@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background: #fff;
+    font: normal 12px/22px ËÎÌå;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #1974A1;
+}
+
+.js {
+    width: 90%;
+    margin: 10px auto 0 auto;
+}
+
+.js p {
+    padding: 5px 0;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.js p span {
+    float: right;
+}
+
+.js p span a {
+    color: #f00;
+    text-decoration: underline;
+}
+
+.js textarea {
+    height: 100px;
+    width: 98%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-top: 2px solid #aaa;
+    border-left: 2px solid #aaa;
+}
+
+/* ±¾Àý×Ócss */
+.outBox {
+    width: 450px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.outBox .hd {
+    height: 30px;
+    line-height: 30px;
+    background: #f4f4f4;
+    padding: 0 20px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.outBox .hd ul {
+    float: left;
+    position: absolute;
+    left: 20px;
+    top: -1px;
+    height: 32px;
+}
+
+.outBox .hd ul li {
+    float: left;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.outBox .hd ul li.on {
+    height: 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-bottom: 2px solid #fff;
+}
+
+.inBox {
+    padding: 15px 15px 0 15px;
+}
+
+.inBox .inHd {
+    height: 24px;
+    line-height: 24px;
+    border-bottom: 1px solid #ccc;
+    padding: 0 10px;
+}
+
+.inBox .inHd ul {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.inBox .inHd ul li {
+    height: 24px;
+    width: 60px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+}
+
+.inBox .inHd ul li.on {
+    background: #ccc;
+    color: #fff;
+}
+
+.inBox .inBd ul {
+    padding: 15px;
+    zoom: 1;
+    overflow: hidden;
+}
+
+.inBox .inBd li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.inBox .inBd li .date {
+    float: right;
+    color: #999;
+}

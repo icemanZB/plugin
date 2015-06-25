@@ -2,8 +2,8 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>SuperSlide - SuperSlide组合应用基础示例</title>
-    <link rel="stylesheet" href="../css/SuperSlide/SuperSlideGroup.css"/>
+    <title>SuperSlide - Tab+无缝滚动（slide组合）</title>
+    <link rel="stylesheet" href="../css/SuperSlide/TabMarquee.css"/>
     <script type="text/javascript" src="../js/jquery-2.0.2.js"></script>
     <script type="text/javascript" src="../js/jquery.SuperSlide.2.1.1.js"></script>
 </head>
@@ -64,9 +64,7 @@
                 <li>
                     <div class="pic">
                         <a href="http://www.SuperSlide2.com" target="_blank">
-                            <img src="../img/SuperSlide/pic2.jpg"/>
-                        </a>
-                    </div>
+                            <img src="../img/SuperSlide/pic2.jpg"/></a></div>
                     <div class="title"><a href="http://www.SuperSlide2.com" target="_blank">效果图2.1</a></div>
                 </li>
                 <li>
@@ -99,7 +97,7 @@
         <!-- slideBox End -->
 
         <div class="slideBox">
-            <a class="sPrev" href="javascript:void(0);"></a>
+            <a class="sPrev" href="javascript:void(0)"></a>
             <ul>
                 <li>
                     <div class="pic">
@@ -144,21 +142,24 @@
 
 <script type="text/javascript">
     /**
-     * SuperSlide组合注意:
+     * SuperSlide组合注意
      * 1、内外层mainCell、targetCell、prevCell、nextCell等对象不能相同 除非特殊应用
      * 2、注意书写顺序,通常先写内层js调用,再写外层js调用
      */
 
-    /* 内层图片滚动切换 */
+    // 内层图片无缝滚动
     jQuery(".slideGroup .slideBox").slide({
         mainCell: "ul",
         vis: 3,
         prevCell: ".sPrev",
         nextCell: ".sNext",
-        effect: "leftLoop"
+        effect: "leftMarquee",
+        interTime: 50,
+        autoPlay: true,
+        trigger: "click"
     });
 
-    /* 外层tab切换 */
+    // 外层tab切换
     jQuery(".slideGroup").slide({titCell: ".parHd li", mainCell: ".parBd"});
 
 </script>
@@ -168,13 +169,12 @@
         1、内外层mainCell、targetCell、prevCell、nextCell等对象不能相同，除非特殊应用；</br>
         2、注意书写顺序，通常先写内层js调用，再写外层js调用</p>
 		<textarea>本例js调用：
-/* 内层图片滚动切换 */
-jQuery(".slideGroup .slideBox").slide({ mainCell:"ul",vis:3,prevCell:".sPrev",nextCell:".sNext",effect:"leftLoop"});
+/* 内层图片无缝滚动 */
+jQuery(".slideGroup .slideBox").slide({ mainCell:"ul",vis:3,prevCell:".sPrev",nextCell:".sNext",effect:"leftMarquee",interTime:50,autoPlay:true,trigger:"click"});
 
 /* 外层tab切换 */
 jQuery(".slideGroup").slide({titCell:".parHd li",mainCell:".parBd"});
 		</textarea>
 </div>
-
 </body>
 </html>

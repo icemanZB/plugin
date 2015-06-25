@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>SuperSlide - 图片导航焦点图</title>
+    <link rel="stylesheet" href="../css/SuperSlide/picFocus.css"/>
+    <script type="text/javascript" src="../js/jquery-2.0.2.js"></script>
+    <script type="text/javascript" src="../js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+<body>
+<div class="picFocus">
+    <div class="bd">
+        <ul>
+            <li>
+                <a target="_blank" href="www.SuperSlide2.com"><img src="../img/SuperSlide/pic1.jpg"/></a>
+            </li>
+            <li>
+                <a target="_blank" href="www.SuperSlide2.com"><img src="../img/SuperSlide/pic2.jpg"/></a>
+            </li>
+            <li>
+                <a target="_blank" href="www.SuperSlide2.com"><img src="../img/SuperSlide/pic3.jpg"/></a>
+            </li>
+            <li>
+                <a target="_blank" href="www.SuperSlide2.com"><img src="../img/SuperSlide/pic4.jpg"/></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="hd">
+        <ul>
+            <li><img src="../img/SuperSlide/pic1.jpg"/></li>
+            <li><img src="../img/SuperSlide/pic2.jpg"/></li>
+            <li><img src="../img/SuperSlide/pic3.jpg"/></li>
+            <li><img src="../img/SuperSlide/pic4.jpg"/></li>
+        </ul>
+    </div>
+
+</div>
+<script type="text/javascript">
+    jQuery(".picFocus").slide({mainCell: ".bd ul", effect: "left", autoPlay: true});
+</script>
+
+
+<div class="js">
+    <p>js调用：</p>
+    <textarea>jQuery(".picFocus").slide({ mainCell:".bd ul",effect:"left",autoPlay:true });</textarea>
+</div>
+
+
+</div>
+</body>
+</html>

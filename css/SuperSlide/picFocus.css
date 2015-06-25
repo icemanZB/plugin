@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background: #fff;
+    font: normal 12px/22px ËÎÌå;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #1974A1;
+}
+
+.js {
+    width: 90%;
+    margin: 10px auto 0 auto;
+}
+
+.js p {
+    padding: 5px 0;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.js p span {
+    float: right;
+}
+
+.js p span a {
+    color: #f00;
+    text-decoration: underline;
+}
+
+.js textarea {
+    height: 100px;
+    width: 98%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-top: 2px solid #aaa;
+    border-left: 2px solid #aaa;
+}
+
+/* ±¾Àý×Ócss */
+.picFocus {
+    margin: 0 auto;
+    width: 467px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.picFocus .hd {
+    width: 100%;
+    padding-top: 5px;
+    overflow: hidden;
+}
+
+.picFocus .hd ul {
+    margin-right: -5px;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.picFocus .hd ul li {
+    padding-top: 5px;
+    float: left;
+    text-align: center;
+}
+
+.picFocus .hd ul li img {
+    width: 109px;
+    height: 65px;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.picFocus .hd ul li.on {
+    background: url(../../img/SuperSlide/icoUp.gif) no-repeat center 0;
+}
+
+.picFocus .hd ul li.on img {
+    border-color: #f60;
+}
+
+.picFocus .bd li {
+    vertical-align: middle;
+}
+
+.picFocus .bd img {
+    width: 467px;
+    height: 230px;
+    display: block;
+}
