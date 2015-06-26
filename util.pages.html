@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>分页</title>
+    <link rel="stylesheet" href="css/util.pages.css"/>
+    <script type="text/javascript" src="js/jquery-2.0.2.js"></script>
+    <script type="text/javascript" src="js/util.pages.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            Bind({Total: 100});
+        });
+
+        function Init(total, val) {
+            pages.val = val;
+            pages.size = 20;
+            pages.current = 1;
+            pages.tag_name = 'pages';
+            pages.handler = "/WebHome/TagListQueryBy";
+            pages.count = total;
+            pages.callback = function (data) {
+                /* $('#content').html(data.ReturnObject.Body);
+                 pages.count = data.ReturnObject.Total;
+                 pages.current = data.ReturnObject.Index;
+                 $('#totalNum').html(data.ReturnObject.Total);*/
+                pages.CreatePage();
+            };
+            pages.CreatePage();
+        }
+        function Bind(data) {
+            Init(data.Total, 1);
+        }
+    </script>
+</head>
+<body>
+<div class="yahoo" id="pages">
+</div>
+</body>
+</html>

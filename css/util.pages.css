@@ -1,0 +1,53 @@
+.yahoo {
+    padding: 3px;
+    font-family: Tahoma, Helvetica, sans-serif;
+    font-size: 12px;
+    font-size: 0.85em;
+}
+
+.yahoo a {
+    text-decoration: none;
+    color: #0061de;
+    margin-right: 3px;
+    padding: 2px 8px;
+    border: 1px solid #ccdbe4;
+}
+
+.yahoo a:hover {
+    background-color: #3666d4;
+    color: #fff;
+    border: 1px solid #2b55af;
+}
+
+.yahoo a:active {
+    background-color: #3666d4;
+    border: 1px solid #2b55af;
+    color: #fff;
+}
+
+.yahoo span.current {
+    font-weight: bold;
+    color: #000;
+    margin-right: 3px;
+    padding: 2px 6px;
+}
+
+.yahoo span.disabled {
+    display: none
+}
+
+.yahoo a.next {
+    border: 2px solid #ccdbe4;
+}
+
+.yahoo a.next:hover {
+    border: #2b55af 2px solid;
+}
+
+.yahoo a.prev {
+    border: 2px solid #ccdbe4;
+}
+
+.yahoo a.prev:hover {
+    border: 2px solid #2b55af;
+}
