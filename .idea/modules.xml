@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/Plugin.iml" filepath="$PROJECT_DIR$/.idea/Plugin.iml" />
+>>>>>>> origin/master
       <module fileurl="file://$PROJECT_DIR$/.idea/plugin.iml" filepath="$PROJECT_DIR$/.idea/plugin.iml" />
     </modules>
   </component>
