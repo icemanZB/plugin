@@ -417,7 +417,3 @@ var openUrl = (function () {
     };
     return o;
 })();
-
-function abc(){
-    alert(1);
-}
