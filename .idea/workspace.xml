@@ -2,18 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d8ab309-0424-4639-913a-b847b9ba12bd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/tablesorter/first.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/tablesorter/last.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/tablesorter/next.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/tablesorter/prev.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/tablesorter/small.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/tablesorter/small_asc.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/tablesorter/small_desc.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/jquery.tablesorter.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery.tablesorter.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.tablesorter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.tablesorter.pager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="plugin.iws" />
@@ -45,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.tablesorter.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jquery.tablesorter.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jquery.tablesorter.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.698324">
-              <caret line="580" column="46" selection-start-line="580" selection-start-column="46" selection-end-line="580" selection-end-column="46" />
+            <state vertical-scroll-proportion="-38.076923">
+              <caret line="239" column="6" selection-start-line="239" selection-start-column="6" selection-end-line="239" selection-end-column="6" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -60,10 +48,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.tablesorter.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="jquery.tablesorter.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/jquery.tablesorter.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.9514825">
               <caret line="130" column="1" selection-start-line="130" selection-start-column="1" selection-end-line="130" selection-end-column="1" />
               <folding />
             </state>
@@ -479,12 +467,6 @@
       <option name="number" value="Default" />
       <updated>1434678435295</updated>
     </task>
-    <task id="LOCAL-00013" summary="add">
-      <created>1435197299499</created>
-      <option name="number" value="00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1435197299499</updated>
-    </task>
     <task id="LOCAL-00014" summary="add">
       <created>1435200073152</created>
       <option name="number" value="00014" />
@@ -773,7 +755,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435558494618</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="add&#10;">
+      <created>1435563192598</created>
+      <option name="number" value="00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1435563192599</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1068,24 +1056,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/jquery.tablesorter.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="130" column="1" selection-start-line="130" selection-start-column="1" selection-end-line="130" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jquery.tablesorter.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.698324">
-          <caret line="580" column="46" selection-start-line="580" selection-start-column="46" selection-end-line="580" selection-end-column="46" />
+        <state vertical-scroll-proportion="-38.076923">
+          <caret line="239" column="6" selection-start-line="239" selection-start-column="6" selection-end-line="239" selection-end-column="6" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/jquery.tablesorter.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9514825">
+          <caret line="130" column="1" selection-start-line="130" selection-start-column="1" selection-end-line="130" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
