@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery上传控件</title>
+    <script type="text/javascript" src='js/jquery-2.0.2.js'></script>
+    <script src='js/jquery.uploadify-v2.1.4/swfobject.js' type="text/javascript"></script>
+	<script src='js/jquery.uploadify-v2.1.4/jquery.uploadify.v2.1.4.min.js' type="text/javascript"></script>
+	<script type="text/javascript">
+		$(function() {
+			$("#up_logo").uploadify({
+				method: "Post",
+				uploader: "/Scripts/jquery.uploadify-v2.1.4/uploadify.swf",
+				script: "/Product/UploadLogo",  // 后台处理的页面
+				fileExt: "*.jpg;*.png;*.gif;*.bmp;*.jpeg",
+				auto: true, // 是否自动上传
+				multi: false, // 设置为true将允许多文件上传
+				buttonText: "Upload Logo",
+				cancelImg: "",
+				//buttonImg: "/images/up_resume.jpg",
+				//显示的高度和宽度，默认 height 30；width 120
+				//width: 118,
+				//height: 34,
+				//上传数量
+        		//'queueSizeLimit' : 25,
+				onSelect: function(event, queueID, fileObj) {
+					//alert("上传自己的简历");
+				},
+				onError: function(event, queueId, fileObj, errorObj) {
+					$("#upmsg").attr("style", "color:#ff0000");
+					$("#upmsg").text("上传失败！");
+				},
+				onComplete: function(event, queueId, fileObj, response, data) {
+					$("#upmsg").attr("style", "");
+					var result = eval('(' + response + ')');
+					if (result.Status == 1) {
+						//赋值
+						$("#Logo").val(result.Msg);
+						$("#LogoImg").attr("src", result.Msg);
+						$("#LogoImg").show();
+						$("#upmsg").text("上传成功！");
+					} else {
+						$("#upmsg").attr("style", "color:#ff0000");
+						$("#upmsg").text(result.Msg);
+					}
+				}
+			});
+		})
+	</script>
+</head>
+<body>
+http://www.abc3210.com/2012/js_09/jquery-uploadify.shtml <br>
+    <strong>图片上传</strong>
+    <input type="file" id="upLogo" name="upLogo"/>
+    <img alt="" id="logoImg" width="150" height="150" />
+    <input type="hidden" id="imgUrl" name="imgUrl" />
+    <span id="upMsg"></span>
+</body>
+</html>
