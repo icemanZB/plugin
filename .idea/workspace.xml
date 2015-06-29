@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d8ab309-0424-4639-913a-b847b9ba12bd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery.upload.html" />
+    <list default="true" id="8d8ab309-0424-4639-913a-b847b9ba12bd" name="Default" comment="add&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="plugin.iws" />
@@ -27,7 +26,7 @@
       <file leaf-file-name="ajax.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ajax.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.5384617">
+            <state vertical-scroll-proportion="0.30769232">
               <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
               <folding />
             </state>
@@ -37,7 +36,7 @@
       <file leaf-file-name="datePicker.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/datePicker.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.0">
+            <state vertical-scroll-proportion="0.30769232">
               <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
@@ -47,8 +46,8 @@
       <file leaf-file-name="jquery.upload.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jquery.upload.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4273743">
-              <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.37709498">
+              <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -402,12 +401,6 @@
       <option name="number" value="Default" />
       <updated>1434678435295</updated>
     </task>
-    <task id="LOCAL-00010" summary="add">
-      <created>1435131049710</created>
-      <option name="number" value="00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1435131049710</updated>
-    </task>
     <task id="LOCAL-00011" summary="add">
       <created>1435132547184</created>
       <option name="number" value="00011" />
@@ -696,7 +689,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435554668635</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="add&#10;">
+      <created>1435556552200</created>
+      <option name="number" value="00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1435556552200</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -888,7 +887,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ajax.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.5384617">
+        <state vertical-scroll-proportion="0.30769232">
           <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
           <folding />
         </state>
@@ -912,7 +911,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/datePicker.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.0">
+        <state vertical-scroll-proportion="0.30769232">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
@@ -920,8 +919,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jquery.upload.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4273743">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.37709498">
+          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
           <folding />
         </state>
       </provider>
