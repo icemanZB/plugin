@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d8ab309-0424-4639-913a-b847b9ba12bd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lazyload/jquery.scrollstop.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lazyload/jquery.scrollstop.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lazyload.html" afterPath="$PROJECT_DIR$/lazyload.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/KinSlideshow/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/KinSlideshow/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/KinSlideshow/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.KinSlideshow-1.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery.KinSlideshow.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.json-2.4.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/util.json.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="plugin.iws" />
@@ -26,12 +30,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="lazyload.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lazyload.html">
+      <file leaf-file-name="jquery.KinSlideshow.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jquery.KinSlideshow.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40223464">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="-0.45810056">
+              <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,7 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SuperSlide/iframe/txtMarquee-top-iframe.html" />
         <option value="$PROJECT_DIR$/css/SuperSlide/nav-iframe.css" />
         <option value="$PROJECT_DIR$/SuperSlide/iframe/nav-iframe.html" />
         <option value="$PROJECT_DIR$/SuperSlide/iframe/sideMenu-iframe.html" />
@@ -112,6 +117,7 @@
         <option value="$PROJECT_DIR$/js/biz.school.js" />
         <option value="$PROJECT_DIR$/zClip.html" />
         <option value="$PROJECT_DIR$/lazyload.html" />
+        <option value="$PROJECT_DIR$/jquery.KinSlideshow.html" />
       </list>
     </option>
   </component>
@@ -223,24 +229,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lazyload" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -259,7 +247,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lazyload" />
+              <option name="myItemId" value="KinSlideshow" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -294,11 +282,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\2015\Study\GitHub\Plugin\img\KinSlideshow" />
+      <recent name="D:\2015\Study\GitHub\Plugin\js" />
       <recent name="D:\2015\Study\GitHub\Plugin\js\lazyload" />
       <recent name="D:\2015\Study\GitHub\Plugin\img\lazyload" />
-      <recent name="D:\2015\Study\GitHub\Plugin\js" />
       <recent name="D:\2015\Study\GitHub\Plugin\js\zClip" />
-      <recent name="D:\2015\Study\GitHub\Plugin\css" />
     </key>
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
@@ -463,12 +451,6 @@
       <created>1434678435295</created>
       <option name="number" value="Default" />
       <updated>1434678435295</updated>
-    </task>
-    <task id="LOCAL-00020" summary="add">
-      <created>1435222695178</created>
-      <option name="number" value="00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1435222695178</updated>
     </task>
     <task id="LOCAL-00021" summary="add">
       <created>1435223614697</created>
@@ -758,7 +740,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435647678988</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="add&#10;">
+      <created>1435649116814</created>
+      <option name="number" value="00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1435649116815</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -809,33 +797,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/kindeditor4.0.10/plugins/flash/flash.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/kindeditor4.0.10/plugins/wordpaste/wordpaste.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/kindeditor4.0.10/plugins/filemanager/images/file-16.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/kindeditor4.0.10/plugins/emoticons/emoticons.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery.uploadify-v2.1.4/com/adobe/errors/IllegalStateError.as">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1076,17 +1037,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jquery.area.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.692307">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#select#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#select#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/biz.area.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16981132">
@@ -1219,9 +1169,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lazyload.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40223464">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.8547486">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.json-2.4.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/util.json.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.KinSlideshow-1.2.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery.area.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10614525">
+          <caret line="6" column="65" selection-start-line="5" selection-start-column="3" selection-end-line="6" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery.KinSlideshow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.45810056">
+          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

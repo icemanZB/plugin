@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>自定义切换参数效果</title>
+    <script type="text/javascript" src="js/jquery-2.0.2.js"></script>
+    <script type="text/javascript" src="js/jquery.KinSlideshow-1.2.min.js"></script>
+    <script type="text/javascript">
+        /*intervalTime:5,         - > 设置间隔时间为5秒 【单位：秒】 [默认为5秒]
+         moveSpeedTime:400        - > 切换一张图片所需时间，【单位：毫秒】[默认为400毫秒]
+
+         //  切换方向 可选值：【 left | right | up | down 】left:向左切换,
+         // right:向右切换,up:向上切换,down:向下切换 [默认向左切换]
+         moveStyle:"left",
+
+         mouseEvent:"mouseclick",    - > 鼠标操作按钮事件,可选值：【mouseclick | mouseover】
+
+         mouseclick： - > 鼠标单击切换。mouseover：鼠标滑过切换。[默认为鼠标点击按钮切换]
+
+         isHasTitleBar:true,        - > 是否显示标题背景 可选值：【 true | false 】[默认为true]
+
+         // 标题背景样式，(isHasTitleBar = true 前提下启用)
+         titleBar:{titleBar_height:40,titleBar_bgColor:"#000000",titleBar_alpha:0.5},
+
+         titleBar_height :40  - > 标题背景高度。[默认：40]
+         titleBar_bgColor:"#000000" - > 标题背景颜色。[默认：#000000]
+         titleBar_alpha:0.5  -> 标题背景透明度，取值【0~1】。[默认：0.5]
+         isHasTitleFont:true,    - > 是否显示标题文字 可选值：【 true | false 】[默认为true]
+
+         // 标题文字样式，(isHasTitleFont = true 前提下启用)
+         titleFont:{TitleFont_size:12,TitleFont_color:"#FFFFFF",TitleFont_family:"Verdana",TitleFont_weight:"bold"},
+
+         TitleFont_size - > 标题文字大小 单位像素。[默认：12]
+         TitleFont_color:"#FFFFFF" - > 标题文字颜色。[默认：#000000]
+         TitleFont_family:"Verdana" -> 标题文字字体。[默认：Verdana]
+         TitleFont_weight:"bold" -> 标题文字粗细。可选值：【 bold | normal 】[默认："bold"]  ,normal 正常 不加粗。
+         isHasBtn:true, -> 是否显示按钮
+
+         // 按钮样式设置，(isHasBtn = true 前提下启用)
+         btn:{btn_bgColor:"#666666",btn_bgHoverColor:"#CC0000",btn_fontColor:"#CCCCCC",
+         btn_fontHoverColor:"#000000",btn_fontFamily:"Verdana", btn_borderColor:"#999999",
+         btn_borderHoverColor:"#FF0000",btn_borderWidth:1,btn_bgAlpha:0.7
+         }
+         btn_bgColor:"#666666" -> 按钮背景颜色  [默认："#666666"]。
+         btn_bgHoverColor:"#CC0000" -> 按钮滑过/点击 背景颜色  [默认："#CC0000"]。
+         btn_fontColor:"#CCCCCC" -> 按钮文字颜色  [默认："#CCCCCC"]。
+         btn_fontHoverColor:"#000000" -> 按钮滑过/点击 按钮文字颜色  [默认："#000000"]。
+         btn_fontFamily:"Verdana", -> 按钮文字字体  [默认："Verdana"]。
+         btn_borderColor:"#999999" -> 按钮边框颜色  [默认："#999999"]。
+         btn_borderHoverColor:"#FF0000" -> 按钮滑过/点击 按钮边框颜色  [默认："#FF0000"]。
+         btn_borderWidth:1 -> 按钮边框宽度，单位像素 不能超过3  [默认：1]。
+         btn_bgAlpha:0.7 -> 按钮透明度 ，取值【0~1】 [默认：0.7]。*/
+        $(function () {
+            $("#KinSlideshow").KinSlideshow({
+                moveStyle: "right"
+            });
+        });
+
+    </script>
+</head>
+<body>
+<h1>不是很好用</h1>
+
+<div id="KinSlideshow" style="visibility:hidden;">
+    <a href="#" target="_blank"><img src="img/KinSlideshow/1.jpg" alt="这是标题一" width="600" height="300"/></a>
+    <a href="#" target="_blank"><img src="img/KinSlideshow/2.jpg" alt="这是标题二" width="600" height="300"/></a>
+    <a href="#" target="_blank"><img src="img/KinSlideshow/3.jpg" alt="这是标题三" width="600" height="300"/></a>
+</div>
+
+<!--小提示1:
+
+外层div建议加上一句样式：style=”visibility:hidden;”
+不加此句在IE下页面刚加载的瞬间时候会看到所有图片原始样子
+这是因为KinSlideshow 要等页面加载完成才能解析页面中要设置成焦点图的HTML
+虽然只有不到0.01秒的瞬间但用户体验不太好，所以建议加上。不加对程序也没影响！
+
+小提示2:
+
+想要兼容Chrome需要在img标签中写上图片的实际宽度和高度<img src= width=”xx” height=”xx” alt=”标题” >
+其他浏览器不需要。<img src=”” alt=”标题” >
+
+小提示3：
+
+必须这样写，这种写法是正确的：
+
+<a href="#" target="_blank"><img src="images/1.jpg" alt="这是标题一" width="600" height="300" /></a>
+如果这样写，还有换行，那么会出现空格现象，所以在做的过程中，千万不要格式化代码
+
+<a href="#" target="_blank">
+    <img src="images/1.jpg" alt="这是标题一" width="600" height="300" />
+</a>
+上边这种写法是错的
+-->
+</body>
+</html>
