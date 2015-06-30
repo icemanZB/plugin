@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d8ab309-0424-4639-913a-b847b9ba12bd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/DD_belatedPNG.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/animate.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/biz.area.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery.area.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="plugin.iws" />
@@ -30,8 +26,8 @@
       <file leaf-file-name="jquery.area.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jquery.area.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3519553">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.75418997">
+              <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
               <folding>
                 <element signature="n#style#0;n#select#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#select#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -64,6 +60,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/form.html" root0="SKIP_INSPECTION" />
@@ -147,26 +146,24 @@
             <id />
           </State>
           <State>
-            <id>CSS</id>
+            <id>Assignment issuesJavaScript</id>
           </State>
           <State>
-            <id>Probable bugsCSS</id>
+            <id>CoffeeScript</id>
           </State>
           <State>
-            <id>RELAX NG</id>
+            <id>GeneralCoffeeScript</id>
           </State>
           <State>
-            <id>XPath</id>
+            <id>GeneralJavaScript</id>
           </State>
           <State>
-            <id>XSLT</id>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
           </State>
         </expanded-state>
-        <selected-state>
-          <State>
-            <id>CssNoGenericFontName</id>
-          </State>
-        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -260,7 +257,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
@@ -440,12 +437,6 @@
       <created>1434678435295</created>
       <option name="number" value="Default" />
       <updated>1434678435295</updated>
-    </task>
-    <task id="LOCAL-00015" summary="add">
-      <created>1435202417693</created>
-      <option name="number" value="00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1435202417693</updated>
     </task>
     <task id="LOCAL-00016" summary="add">
       <created>1435214868212</created>
@@ -735,7 +726,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435564769638</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="add&#10;">
+      <created>1435628760679</created>
+      <option name="number" value="00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1435628760679</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1130,8 +1127,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jquery.area.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3519553">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.75418997">
+          <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
           <folding>
             <element signature="n#style#0;n#select#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#select#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
