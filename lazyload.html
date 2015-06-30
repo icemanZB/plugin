@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>延迟加载图片的 jQuery 插件</title>
+    <script type="text/javascript" src="js/jquery-2.0.2.js"></script>
+    <script src="js/lazyload/jquery.lazyload.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function(){
+            // $("img.lazy").lazyload();
+            $("img").lazyload({
+                placeholder : "img/lazyload/grey.gif",
+                // 默认情况下处于等待状态, 直到用户滚动到窗口上图片所在位置 在灰色占位图片被点击之前阻止加载图片
+                event : "click",  // 事件触发器
+                // 当图片完全加载的时候, 插件默认地使用 show() 方法来将图显示出来. 其实你可以使用任何你想用的特效来处理
+                effect: "fadeIn"
+
+            });
+
+        });
+    </script>
+</head>
+<body>
+<h1>http://www.neoease.com/lazy-load-jquery-plugin-delay-load-image/</h1>
+<img class="lazy" src="img/lazyload/grey.gif" data-original="img/lazyload/example.jpg" width="640" heigh="480"/><br/>
+<img class="lazy" src="img/lazyload/grey.gif" data-original="img/lazyload/0.jpg" width="640" heigh="480"/><br/>
+<img class="lazy" src="img/lazyload/grey.gif" data-original="img/lazyload/0.jpg" width="640" heigh="480"/><br/>
+<img class="lazy" src="img/lazyload/grey.gif" data-original="img/lazyload/0.jpg" width="640" heigh="480"/><br/>
+<img class="lazy" src="img/lazyload/grey.gif" data-original="img/lazyload/0.jpg" width="640" heigh="480"/><br/>
+<img class="lazy" src="img/lazyload/grey.gif" data-original="img/lazyload/0.jpg" width="640" heigh="480"/><br/>
+<!--
+图片在容器里面
+你可以将插件用在可滚动容器的图片上,例如带滚动条的 DIV 元素 你要做的只是将容器定义为 jQuery 对象并作为参数传到初始化方法里面
+ #container {
+    height: 600px;
+    overflow: scroll;
+}
+
+$("img.lazy").lazyload({
+     container: $("#container")
+});
+
+
+当图片不顺序排列
+
+滚动页面的时候,Lazy Load 会循环为加载的图片.在循环中检测图片是否在可视区域内.
+默认情况下在找到第一张不在可见区域的图片时停止循环. 图片被认为是流式分布的,
+图片在页面中的次序和 HTML 代码中次序相同. 但是在一些布局中, 这样的假设是不成立的. 不过你可以通过 failurelimit 选项来控制加载行为.
+
+$("img.lazy").lazyload({
+    failure_limit : 10
+});
+
+将 failurelimit 设为 10 令插件找到 10 个不在可见区域的图片是才停止搜索. 如果你有一个猥琐的布局, 请把这个参数设高一点.
+
+
+加载隐藏的图片
+
+可能在你的页面上埋藏可很多隐藏的图片 比如插件用在对列表的筛选, 你可以不断地修改列表中各条目的显示状态.
+为了提升性能,,Lazy Load 默认忽略了隐藏图片. 如果你想要加载隐藏图片, 请将 skip_invisible 设为 false
+
+$("img.lazy").lazyload({
+    skip_invisible : false
+});
+
+延迟加载图片
+
+Lazy Load 插件的一个不完整的功能, 但是这也能用来实现图片的延迟加载.
+下面的代码实现了页面加载完成后再加载. 页面加载完成 5 秒后, 指定区域内的图片会自动进行加载. 这是延迟加载演示页面.
+
+$(function() {
+    $("img:below-the-fold").lazyload({
+        event : "sporty"
+    });
+});
+$(window).bind("load", function() {
+    var timeout = setTimeout(function() {$("img.lazy").trigger("sporty")}, 5000);
+});
+
+
+-->
+</body>
+</html>

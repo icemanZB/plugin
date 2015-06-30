@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d8ab309-0424-4639-913a-b847b9ba12bd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/zClip/ZeroClipboard.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jQuery.md5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/zClip/jquery.zclip.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zClip.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/lazyload/0.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/lazyload/example.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/lazyload/grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/html5js.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lazyload/jquery.lazyload.1.9.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lazyload/jquery.lazyload.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lazyload.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/test.biz.slider.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="plugin.iws" />
@@ -27,21 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="zClip.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/zClip.html">
+      <file leaf-file-name="lazyload.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lazyload.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.547486">
-              <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="util.pages.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util.pages.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.8461537">
-              <caret line="7" column="67" selection-start-line="6" selection-start-column="3" selection-end-line="7" selection-end-column="67" />
+            <state vertical-scroll-proportion="0.27094972">
+              <caret line="59" column="48" selection-start-line="59" selection-start-column="48" selection-end-line="59" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -72,7 +66,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/SuperSlide/txtMarquee-top-iframe.css" />
         <option value="$PROJECT_DIR$/SuperSlide/iframe/txtMarquee-top-iframe.html" />
         <option value="$PROJECT_DIR$/css/SuperSlide/nav-iframe.css" />
         <option value="$PROJECT_DIR$/SuperSlide/iframe/nav-iframe.html" />
@@ -123,6 +116,7 @@
         <option value="$PROJECT_DIR$/school.html" />
         <option value="$PROJECT_DIR$/js/biz.school.js" />
         <option value="$PROJECT_DIR$/zClip.html" />
+        <option value="$PROJECT_DIR$/lazyload.html" />
       </list>
     </option>
   </component>
@@ -220,25 +214,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zClip" />
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -253,6 +229,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lazyload" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -287,11 +267,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\2015\Study\GitHub\Plugin\js\zClip" />
+      <recent name="D:\2015\Study\GitHub\Plugin\img\lazyload" />
+      <recent name="D:\2015\Study\GitHub\Plugin\js\lazyload" />
       <recent name="D:\2015\Study\GitHub\Plugin\js" />
+      <recent name="D:\2015\Study\GitHub\Plugin\js\zClip" />
       <recent name="D:\2015\Study\GitHub\Plugin\css" />
-      <recent name="D:\2015\Study\GitHub\Plugin\img\tablesorter" />
-      <recent name="D:\2015\Study\GitHub\Plugin\js\jquery.uploadify-v2.1.4\com\adobe" />
     </key>
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
@@ -456,12 +436,6 @@
       <created>1434678435295</created>
       <option name="number" value="Default" />
       <updated>1434678435295</updated>
-    </task>
-    <task id="LOCAL-00018" summary="add">
-      <created>1435221043626</created>
-      <option name="number" value="00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1435221043626</updated>
     </task>
     <task id="LOCAL-00019" summary="add">
       <created>1435222653282</created>
@@ -751,14 +725,20 @@
       <option name="project" value="LOCAL" />
       <updated>1435638435882</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="add&#10;">
+      <created>1435642848944</created>
+      <option name="number" value="00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1435642848945</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1448" height="864" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17222223" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32769832" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
@@ -802,45 +782,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ajax.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cookie.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/My97DatePicker/lang/en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/kindeditor4.0.10/kindeditor-min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/kindeditor4.0.10/lang/ar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/kindeditor4.0.10/themes/qq/qq.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -878,6 +819,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -947,14 +889,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8301887">
           <caret line="62" column="39" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/util.pages.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2425876">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1121,14 +1055,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kindeditor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15083799">
-          <caret line="6" column="69" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15083799">
@@ -1196,18 +1122,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/test.biz.slider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.3638814">
+          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/util.pages.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.8461537">
+        <state vertical-scroll-proportion="0.17597765">
           <caret line="7" column="67" selection-start-line="6" selection-start-column="3" selection-end-line="7" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/util.pages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5336927">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zClip.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.547486">
-          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.3715084">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/html5js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lazyload/jquery.lazyload.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lazyload/jquery.lazyload.1.9.3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.5283017">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kindeditor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17597765">
+          <caret line="7" column="84" selection-start-line="6" selection-start-column="3" selection-end-line="7" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lazyload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27094972">
+          <caret line="59" column="48" selection-start-line="59" selection-start-column="48" selection-end-line="59" selection-end-column="48" />
           <folding />
         </state>
       </provider>
