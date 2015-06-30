@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d8ab309-0424-4639-913a-b847b9ba12bd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/biz.school.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/school.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="plugin.iws" />
@@ -23,24 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="jquery.area.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jquery.area.html">
+      <file leaf-file-name="school.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/school.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75418997">
-              <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
-              <folding>
-                <element signature="n#style#0;n#select#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-13.692307">
+              <caret line="98" column="55" selection-start-line="98" selection-start-column="50" selection-end-line="98" selection-end-column="55" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="biz.area.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/biz.area.js">
+      <file leaf-file-name="biz.school.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/biz.school.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="16" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.36927223">
+              <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -71,8 +70,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SuperSlide/iframe/txtScroll-top-iframe.html" />
-        <option value="$PROJECT_DIR$/css/SuperSlide/txtMarquee-left-iframe.css" />
         <option value="$PROJECT_DIR$/SuperSlide/iframe/txtMarquee-left-iframe.html" />
         <option value="$PROJECT_DIR$/css/SuperSlide/txtMarquee-top-iframe.css" />
         <option value="$PROJECT_DIR$/SuperSlide/iframe/txtMarquee-top-iframe.html" />
@@ -122,6 +119,8 @@
         <option value="$PROJECT_DIR$/jquery.tablesorter.html" />
         <option value="$PROJECT_DIR$/form.html" />
         <option value="$PROJECT_DIR$/jquery.area.html" />
+        <option value="$PROJECT_DIR$/school.html" />
+        <option value="$PROJECT_DIR$/js/biz.school.js" />
       </list>
     </option>
   </component>
@@ -438,12 +437,6 @@
       <option name="number" value="Default" />
       <updated>1434678435295</updated>
     </task>
-    <task id="LOCAL-00016" summary="add">
-      <created>1435214868212</created>
-      <option name="number" value="00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1435214868212</updated>
-    </task>
     <task id="LOCAL-00017" summary="add">
       <created>1435219595779</created>
       <option name="number" value="00017" />
@@ -732,7 +725,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435628760679</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="add&#10;">
+      <created>1435629141790</created>
+      <option name="number" value="00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1435629141790</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -888,6 +887,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1082,7 +1082,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1117,22 +1117,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jquery.area.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.692307">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#select#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#select#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/biz.area.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.16981132">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jquery.area.html">
+    <entry file="file://$PROJECT_DIR$/school.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75418997">
-          <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
-          <folding>
-            <element signature="n#style#0;n#select#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-13.692307">
+          <caret line="98" column="55" selection-start-line="98" selection-start-column="50" selection-end-line="98" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery-2.0.2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45687333">
+          <caret line="427" column="69" selection-start-line="427" selection-start-column="69" selection-end-line="427" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/biz.school.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36927223">
+          <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
