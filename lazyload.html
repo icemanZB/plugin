@@ -5,13 +5,15 @@
     <title>延迟加载图片的 jQuery 插件</title>
     <script type="text/javascript" src="js/jquery-2.0.2.js"></script>
     <script src="js/lazyload/jquery.lazyload.min.js" type="text/javascript"></script>
+    <script src="js/lazyload/jquery.scrollstop.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(function(){
             // $("img.lazy").lazyload();
             $("img").lazyload({
                 placeholder : "img/lazyload/grey.gif",
+                event: "scrollstop",
                 // 默认情况下处于等待状态, 直到用户滚动到窗口上图片所在位置 在灰色占位图片被点击之前阻止加载图片
-                event : "click",  // 事件触发器
+                // event : "click",  // 事件触发器
                 // 当图片完全加载的时候, 插件默认地使用 show() 方法来将图显示出来. 其实你可以使用任何你想用的特效来处理
                 effect: "fadeIn"
 
