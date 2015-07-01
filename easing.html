@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>动画效果扩展</title>
+    <style type="text/css">
+        #boxing {
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -150px;
+            margin-top: -150px;
+        }
+
+        #box {
+            height: 100px;
+            width: 100px;
+            background: #000;
+            margin: 0 auto;
+        }
+    </style>
+    <script type="text/javascript" src="js/jquery-2.0.2.js"></script>
+    <script type="text/javascript" src="js/easing/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/easing/jquery.easing.compatibility.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var boing = function () {
+                $('#boxing')
+                        .animate({marginLeft: '50px'}, 1000, 'easeOutElastic')
+                        .animate({marginTop: '50px'}, 1000, 'easeOutBounce')
+                        .animate({marginLeft: '-150px'}, 1000, 'easeOutQuad')
+                        .animate({marginTop: '-150px'}, 1000, 'easeInOutBack');
+            };
+            var squish = function () {
+                $('#box')
+                        .animate({height: '100px', marginTop: '0px', width: '50px'}, 1000, 'easeOutElastic')
+                        .animate({height: '50px', marginTop: '25px', width: '50px'}, 1000, 'easeOutBounce')
+                        .animate({height: '50px', marginTop: '25px', width: '100px'}, 1000, 'easeOutQuad')
+                        .animate({height: '100px', marginTop: '0px', width: '100px'}, 1000, 'easeInOutBack');
+            }
+            setInterval(boing, 4000);
+            setInterval(squish, 4000);
+            setTimeout(function () {
+                boing();
+                squish();
+            }, 500);
+        });
+
+        /*
+         * 关于In、Out、Inout的说明：
+         *   easeIn: 加速度缓动
+         *   easeOut:减速度缓动
+         *   easeInOut:先加速度至50%，再减速度完成动画。
+         *
+         * 如何应用:slideUp|slideDown|slideToggle|fadeIn|fadeOut|fadeToggle
+
+         * $(element).slideUp(duration,easing,[callback]);
+
+         * fadeTo
+
+         * $(element).fadeTo(duration,opacity,easing,[callback]);
+
+         * animate
+
+         * $(element).animate({properties},duration,easing,callback);
+
+         * jQuery1.4+版本更可以:
+
+         * $(element).animate({left:[100,'swing'],top:[100,'easeOutBounce']});
+
+         * 或者
+
+         * jQuery(myElement).animate({left:100,top:100},{specialEasing:{left: 'swing',top:'easeOutBounce'}});
+
+         * 方法1、设置jQuery默认动画效果
+
+         * jQuery.easing.def = “method”; // 如：easeOutExpo
+
+         * 方法2、jQuery默认动画
+
+         * 支持toggle()、slideUp()、slideDown()、show()、hide()等jQuery内置的动画效果
+
+         * 如以下代码:
+
+             $(element).slideUp({
+
+             duration: 1000,
+
+             easing: method,
+
+             complete: callback});
+         *
+         *
+         * */
+    </script>
+</head>
+<body>
+<h1>http://www.weeeb.net/c879.html</h1>
+<div id="boxing">
+    <div id="box"></div>
+</div>
+</body>
+</html>
