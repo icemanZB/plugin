@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <maxGold>-1</maxGold>
+  <requireSignIn>0</requireSignIn>
+  <unLoginFunctionName>login</unLoginFunctionName>
+  <source>财金乐透</source>
+  <updateCoinsFunName>updatecoins</updateCoinsFunName>
+</config>

@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d8ab309-0424-4639-913a-b847b9ba12bd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/easing.html" afterPath="$PROJECT_DIR$/easing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flash/slotmachine/assets/skin/Main.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flash/slotmachine/assets/skin/Preloading.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flash/SlotMachineApp.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flash/slotmachine/assets/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flash/slot.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flash/swfobject.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="plugin.iws" />
@@ -24,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="easing.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/easing.html">
+      <file leaf-file-name="slot.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flash/slot.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.547486">
-              <caret line="92" column="34" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.32681563">
+              <caret line="13" column="67" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -48,9 +53,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="PUSH_TAGS">
-      <GitPushTagMode />
-    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/form.html" root0="SKIP_INSPECTION" />
@@ -59,7 +61,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SuperSlide/index.html" />
         <option value="$PROJECT_DIR$/SuperSlide/multipleLine.html" />
         <option value="$PROJECT_DIR$/css/SuperSlide/multipleColumn.html" />
         <option value="$PROJECT_DIR$/SuperSlide/multipleColumn.html" />
@@ -110,6 +111,7 @@
         <option value="$PROJECT_DIR$/lrscroll.html" />
         <option value="$PROJECT_DIR$/js/util.scrollanimate.js" />
         <option value="$PROJECT_DIR$/easing.html" />
+        <option value="$PROJECT_DIR$/flash/slot.html" />
       </list>
     </option>
   </component>
@@ -206,39 +208,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="easing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="flash" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -260,11 +230,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\2015\Study\GitHub\Plugin" />
       <recent name="D:\2015\Study\GitHub\Plugin\js\easing" />
       <recent name="D:\2015\Study\GitHub\Plugin\js" />
       <recent name="D:\2015\Study\GitHub\Plugin\img\KinSlideshow" />
       <recent name="D:\2015\Study\GitHub\Plugin\js\lazyload" />
-      <recent name="D:\2015\Study\GitHub\Plugin\img\lazyload" />
     </key>
   </component>
   <component name="RunManager">
@@ -317,12 +287,6 @@
       <created>1434678435295</created>
       <option name="number" value="Default" />
       <updated>1434678435295</updated>
-    </task>
-    <task id="LOCAL-00024" summary="add">
-      <created>1435296761579</created>
-      <option name="number" value="00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1435296761579</updated>
     </task>
     <task id="LOCAL-00025" summary="add">
       <created>1435297904177</created>
@@ -612,7 +576,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435716731278</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="add&#10;">
+      <created>1435716762755</created>
+      <option name="number" value="00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1435716762756</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -663,13 +633,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/util.method.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8301887">
-          <caret line="62" column="39" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jquery.pages.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.2122905">
@@ -1018,15 +981,23 @@
         <state vertical-scroll-proportion="0.3328467">
           <caret line="18" column="10" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="10" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/easing.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.547486">
-          <caret line="92" column="34" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
+        <state vertical-scroll-proportion="-6.769231">
+          <caret line="80" column="25" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flash/slot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32681563">
+          <caret line="13" column="67" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
           <folding />
         </state>
       </provider>
