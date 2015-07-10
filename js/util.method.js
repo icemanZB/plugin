@@ -417,3 +417,48 @@ var openUrl = (function () {
     };
     return o;
 })();
+
+
+var initializing = false;
+function initClass(baseClass, prop) {
+    if (typeof(baseClass) === "object") {
+        prop = baseClass;
+        baseClass = null;
+    }
+
+    function F() {
+        if (initializing === false) {
+            if (baseClass) {
+                this.baseprototype = baseClass.prototype;
+            }
+            this.init.apply(this, arguments);
+        }
+    }
+
+    if (baseClass) {
+        initializing = true;
+        F.prototype = new baseClass();
+        F.prototype.constructor = F;
+        initializing = false;
+    }
+
+    for (var name in prop) {
+        if (prop.hasOwnProperty(name)) {
+            if (baseClass && typeof(prop[name]) ===
+                "function" && typeof(F.prototype[name]) === "function") {
+                F.prototype[name] = (function (name, fn) {
+                    return function () {
+                        this.base = baseClass.prototype[name];
+                        return fn.apply(this, arguments);
+                    };
+                })(name, prop[name]);
+            } else {
+                F.prototype[name] = prop[name];
+            }
+        }
+    }
+    return F;
+}
+
+
+
